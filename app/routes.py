@@ -1,11 +1,12 @@
 from app import app
 import os
 import urllib.request
-from flask import flash, request, redirect, render_template , Response
+from flask import flash, request, redirect, render_template , Response ,jsonify
 from werkzeug.utils import secure_filename
 import sys
 
-ALLOWED_EXTENSIONS = set(['mp4','wmv','jpg'])
+ALLOWED_EXTENSIONS = set(['mp4','wmv','mov','jpg'])
+
 @app.route('/')
 def upload():
 	return render_template('upload.html')
@@ -22,11 +23,32 @@ def upload_file():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            status_code = Response(status=200)
             seperate_frame()
             string = string_represent()
             thai = FKNN(string)
-            return thai
+            data = {
+                'result' : thai,
+                'status_code' : '200'
+            }
+            return jsonify(data)
+        else:
+            status_code = Response(status=406)
+            return status_code
+@app.route('/test',methods =['POST'])
+def upload_file2():
+    if request.method == 'POST':
+        file = request.files['file']
+        if file.filename == '':
+            status_code = Response(status=204)
+            return status_code
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            data = {
+                'result' : "thai",
+                'status_code' : '200'
+            }
+            return jsonify(data)
         else:
             status_code = Response(status=406)
             return status_code
@@ -35,6 +57,7 @@ def seperate_frame():
     import numpy as np
     import os
     import cv2
+    import time
     source = "/root/senior-project/app/upload_video/"
     video = os.listdir(source)
     print("Seperate frame from Video")
@@ -51,10 +74,13 @@ def seperate_frame():
     while success:
         if(count > 0):
             cap.set(cv2.CAP_PROP_POS_MSEC,(count*gap_time*35))
+            # dim=(720,576)
+            # resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
             cv2.imwrite("%d.jpg" % count, image)
             success,image = cap.read()
             print('Read a new frame: ', success)
         count+=1
+    
     os.chdir('/root/senior-project/app/')
     os.remove(source+video[0])
     print("Video Removed!")
@@ -66,7 +92,7 @@ def string_represent():
     import re
     print("String Representation Time")
     source  = "/root/senior-project/app/video_frame/"
-    gesture_source = '/root/senior-project/app/gesture_lib/'
+    gesture_source = '/root/senior-project/app/gesture_lib_new/'
     datalist = os.listdir(source)
     gesture_lib = os.listdir(gesture_source)
     datalist.sort(key=lambda f: int(re.sub('\D', '', f)))

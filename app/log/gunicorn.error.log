@@ -1,0 +1,2671 @@
+[2021-03-12 09:56:36 +0000] [8477] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 09:56:36 +0000] [8477] [INFO] Listening at: http://0.0.0.0:8000 (8477)
+[2021-03-12 09:56:36 +0000] [8477] [INFO] Using worker: sync
+[2021-03-12 09:56:36 +0000] [8483] [INFO] Booting worker with pid: 8483
+[2021-03-12 09:56:53 +0000] [8477] [INFO] Handling signal: int
+[2021-03-12 09:56:53 +0000] [8483] [INFO] Worker exiting (pid: 8483)
+[2021-03-12 09:56:53 +0000] [8477] [INFO] Shutting down: Master
+[2021-03-12 09:56:59 +0000] [8533] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 09:56:59 +0000] [8533] [INFO] Listening at: http://0.0.0.0:8000 (8533)
+[2021-03-12 09:56:59 +0000] [8533] [INFO] Using worker: sync
+[2021-03-12 09:56:59 +0000] [8536] [INFO] Booting worker with pid: 8536
+[2021-03-12 09:57:14 +0000] [8533] [INFO] Handling signal: int
+[2021-03-12 09:57:14 +0000] [8536] [INFO] Worker exiting (pid: 8536)
+[2021-03-12 09:57:15 +0000] [8533] [INFO] Shutting down: Master
+[2021-03-12 09:59:36 +0000] [1260] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 09:59:36 +0000] [1260] [INFO] Listening at: http://0.0.0.0:8000 (1260)
+[2021-03-12 09:59:36 +0000] [1260] [INFO] Using worker: sync
+[2021-03-12 09:59:36 +0000] [1264] [INFO] Booting worker with pid: 1264
+[2021-03-12 10:26:59 +0000] [1260] [INFO] Handling signal: int
+[2021-03-12 10:26:59 +0000] [1264] [INFO] Worker exiting (pid: 1264)
+[2021-03-12 10:27:00 +0000] [1260] [INFO] Shutting down: Master
+[2021-03-12 10:27:02 +0000] [2234] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 10:27:02 +0000] [2234] [INFO] Listening at: http://0.0.0.0:8000 (2234)
+[2021-03-12 10:27:02 +0000] [2234] [INFO] Using worker: sync
+[2021-03-12 10:27:02 +0000] [2238] [INFO] Booting worker with pid: 2238
+[2021-03-12 10:27:03 +0000] [2238] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/anaconda3/envs/project/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/senior-project/wsgi.py", line 1, in <module>
+    from app import app
+  File "/root/senior-project/app/__init__.py", line 12, in <module>
+    from app import routes
+  File "/root/senior-project/app/routes.py", line 4, in <module>
+    from flask import flash, request, redirect, render_template , Response ,jsontify
+ImportError: cannot import name 'jsontify'
+[2021-03-12 10:27:03 +0000] [2238] [INFO] Worker exiting (pid: 2238)
+[2021-03-12 10:27:03 +0000] [2234] [INFO] Shutting down: Master
+[2021-03-12 10:27:03 +0000] [2234] [INFO] Reason: Worker failed to boot.
+[2021-03-12 10:27:07 +0000] [2246] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 10:27:07 +0000] [2246] [INFO] Listening at: http://0.0.0.0:8000 (2246)
+[2021-03-12 10:27:07 +0000] [2246] [INFO] Using worker: sync
+[2021-03-12 10:27:07 +0000] [2249] [INFO] Booting worker with pid: 2249
+[2021-03-12 10:27:07 +0000] [2249] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/anaconda3/envs/project/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/senior-project/wsgi.py", line 1, in <module>
+    from app import app
+  File "/root/senior-project/app/__init__.py", line 12, in <module>
+    from app import routes
+  File "/root/senior-project/app/routes.py", line 4, in <module>
+    from flask import flash, request, redirect, render_template , Response ,jsontify
+ImportError: cannot import name 'jsontify'
+[2021-03-12 10:27:07 +0000] [2249] [INFO] Worker exiting (pid: 2249)
+[2021-03-12 10:27:07 +0000] [2246] [INFO] Shutting down: Master
+[2021-03-12 10:27:07 +0000] [2246] [INFO] Reason: Worker failed to boot.
+[2021-03-12 10:28:26 +0000] [2384] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 10:28:26 +0000] [2384] [INFO] Listening at: http://0.0.0.0:8000 (2384)
+[2021-03-12 10:28:26 +0000] [2384] [INFO] Using worker: sync
+[2021-03-12 10:28:26 +0000] [2387] [INFO] Booting worker with pid: 2387
+[2021-03-12 10:33:01,662] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/1_1.mp4'
+[2021-03-12 10:34:07 +0000] [2384] [INFO] Handling signal: int
+[2021-03-12 10:34:07 +0000] [2387] [INFO] Worker exiting (pid: 2387)
+[2021-03-12 10:34:07 +0000] [2384] [INFO] Shutting down: Master
+[2021-03-12 10:34:39 +0000] [2914] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 10:34:39 +0000] [2914] [INFO] Listening at: http://0.0.0.0:8000 (2914)
+[2021-03-12 10:34:39 +0000] [2914] [INFO] Using worker: sync
+[2021-03-12 10:34:39 +0000] [2917] [INFO] Booting worker with pid: 2917
+[2021-03-12 10:35:17 +0000] [2914] [CRITICAL] WORKER TIMEOUT (pid:2917)
+[2021-03-12 10:35:17 +0000] [2917] [INFO] Worker exiting (pid: 2917)
+[2021-03-12 10:35:18 +0000] [2980] [INFO] Booting worker with pid: 2980
+[2021-03-12 10:39:12 +0000] [2914] [INFO] Handling signal: int
+[2021-03-12 10:39:12 +0000] [2980] [INFO] Worker exiting (pid: 2980)
+[2021-03-12 10:39:12 +0000] [2914] [INFO] Shutting down: Master
+[2021-03-12 10:39:31 +0000] [3359] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 10:39:31 +0000] [3359] [INFO] Listening at: http://0.0.0.0:8000 (3359)
+[2021-03-12 10:39:31 +0000] [3359] [INFO] Using worker: sync
+[2021-03-12 10:39:31 +0000] [3365] [INFO] Booting worker with pid: 3365
+[2021-03-12 10:59:25 +0000] [3359] [CRITICAL] WORKER TIMEOUT (pid:3365)
+[2021-03-12 10:59:25 +0000] [3365] [INFO] Worker exiting (pid: 3365)
+[2021-03-12 10:59:26 +0000] [3663] [INFO] Booting worker with pid: 3663
+[2021-03-12 12:54:14 +0000] [3359] [INFO] Handling signal: hup
+[2021-03-12 12:54:14 +0000] [3359] [INFO] Hang up: Master
+[2021-03-12 12:54:14 +0000] [3359] [INFO] Handling signal: hup
+[2021-03-12 12:54:14 +0000] [3359] [INFO] Hang up: Master
+[2021-03-12 12:54:14 +0000] [4013] [INFO] Booting worker with pid: 4013
+[2021-03-12 12:54:14 +0000] [4014] [INFO] Booting worker with pid: 4014
+[2021-03-12 12:54:14 +0000] [4013] [INFO] Worker exiting (pid: 4013)
+[2021-03-12 13:03:38 +0000] [4630] [INFO] Booting worker with pid: 4630
+[2021-03-12 13:03:38 +0000] [3359] [INFO] Handling signal: hup
+[2021-03-12 13:03:38 +0000] [3359] [INFO] Hang up: Master
+[2021-03-12 13:03:38 +0000] [3359] [INFO] Handling signal: term
+[2021-03-12 13:03:38 +0000] [4639] [INFO] Booting worker with pid: 4639
+[2021-03-12 13:03:39 +0000] [4630] [INFO] Worker exiting (pid: 4630)
+[2021-03-12 13:03:39 +0000] [4639] [INFO] Worker exiting (pid: 4639)
+[2021-03-12 13:03:39 +0000] [3359] [INFO] Shutting down: Master
+[2021-03-12 13:06:00 +0000] [1249] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 13:06:00 +0000] [1249] [INFO] Listening at: http://0.0.0.0:8000 (1249)
+[2021-03-12 13:06:00 +0000] [1249] [INFO] Using worker: sync
+[2021-03-12 13:06:00 +0000] [1253] [INFO] Booting worker with pid: 1253
+[2021-03-12 13:06:00 +0000] [1254] [INFO] Booting worker with pid: 1254
+[2021-03-12 13:06:00 +0000] [1255] [INFO] Booting worker with pid: 1255
+[2021-03-12 15:02:09 +0000] [7722] [INFO] Booting worker with pid: 7722
+[2021-03-12 15:02:09 +0000] [7723] [INFO] Booting worker with pid: 7723
+[2021-03-12 15:02:09 +0000] [7724] [INFO] Booting worker with pid: 7724
+[2021-03-12 15:02:09 +0000] [1249] [INFO] Handling signal: hup
+[2021-03-12 15:02:09 +0000] [1249] [INFO] Hang up: Master
+[2021-03-12 15:02:09 +0000] [7726] [INFO] Booting worker with pid: 7726
+[2021-03-12 15:02:09 +0000] [7725] [INFO] Booting worker with pid: 7725
+[2021-03-12 15:02:09 +0000] [1249] [INFO] Handling signal: hup
+[2021-03-12 15:02:09 +0000] [1249] [INFO] Hang up: Master
+[2021-03-12 15:02:09 +0000] [7727] [INFO] Booting worker with pid: 7727
+[2021-03-12 15:02:09 +0000] [7728] [INFO] Booting worker with pid: 7728
+[2021-03-12 15:02:09 +0000] [7729] [INFO] Booting worker with pid: 7729
+[2021-03-12 15:02:09 +0000] [7730] [INFO] Booting worker with pid: 7730
+[2021-03-12 15:02:11 +0000] [7722] [INFO] Worker exiting (pid: 7722)
+[2021-03-12 15:02:11 +0000] [7723] [INFO] Worker exiting (pid: 7723)
+[2021-03-12 15:02:11 +0000] [7724] [INFO] Worker exiting (pid: 7724)
+[2021-03-12 15:02:11 +0000] [7726] [INFO] Worker exiting (pid: 7726)
+[2021-03-12 15:02:11 +0000] [7727] [INFO] Worker exiting (pid: 7727)
+[2021-03-12 15:02:11 +0000] [7725] [INFO] Worker exiting (pid: 7725)
+[2021-03-12 17:17:40 +0000] [1249] [CRITICAL] WORKER TIMEOUT (pid:7730)
+[2021-03-12 17:17:40 +0000] [7730] [INFO] Worker exiting (pid: 7730)
+[2021-03-12 17:17:40 +0000] [20107] [INFO] Booting worker with pid: 20107
+[2021-03-12 17:36:01,052] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 43, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-12 17:36:03,937] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 43, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-12 17:40:00 +0000] [1249] [INFO] Handling signal: term
+[2021-03-12 17:40:00 +0000] [7728] [INFO] Worker exiting (pid: 7728)
+[2021-03-12 17:40:00 +0000] [1249] [INFO] Shutting down: Master
+[2021-03-12 17:42:52 +0000] [1195] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 17:42:52 +0000] [1195] [INFO] Listening at: http://0.0.0.0:8000 (1195)
+[2021-03-12 17:42:52 +0000] [1195] [INFO] Using worker: sync
+[2021-03-12 17:42:52 +0000] [1199] [INFO] Booting worker with pid: 1199
+[2021-03-12 17:42:52 +0000] [1200] [INFO] Booting worker with pid: 1200
+[2021-03-12 17:42:52 +0000] [1201] [INFO] Booting worker with pid: 1201
+[2021-03-12 17:43:42,380] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    os.remove(source+video[0])
+FileNotFoundError: [Errno 2] No such file or directory: '/root/senior-project/app/upload_video/a7e569a0-2845-41e8-a7dc-94d8606d88642069386941.mp4'
+[2021-03-12 17:44:21 +0000] [1195] [INFO] Handling signal: int
+[2021-03-12 17:44:21 +0000] [1201] [INFO] Worker exiting (pid: 1201)
+[2021-03-12 17:44:22 +0000] [1195] [INFO] Shutting down: Master
+[2021-03-12 17:45:03 +0000] [1522] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 17:45:03 +0000] [1522] [INFO] Listening at: http://0.0.0.0:8000 (1522)
+[2021-03-12 17:45:03 +0000] [1522] [INFO] Using worker: sync
+[2021-03-12 17:45:03 +0000] [1525] [INFO] Booting worker with pid: 1525
+[2021-03-12 17:49:37,869] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/43e7f862-bf38-4eae-a4b7-bf225dfafa9b122975233.mp4'
+[2021-03-12 17:52:14 +0000] [1522] [INFO] Handling signal: int
+[2021-03-12 17:52:14 +0000] [1525] [INFO] Worker exiting (pid: 1525)
+[2021-03-12 17:52:15 +0000] [1522] [INFO] Shutting down: Master
+[2021-03-12 17:52:17 +0000] [2031] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 17:52:17 +0000] [2031] [INFO] Listening at: http://0.0.0.0:8000 (2031)
+[2021-03-12 17:52:17 +0000] [2031] [INFO] Using worker: sync
+[2021-03-12 17:52:17 +0000] [2034] [INFO] Booting worker with pid: 2034
+[2021-03-12 17:55:40 +0000] [2031] [INFO] Handling signal: int
+[2021-03-12 17:55:40 +0000] [2034] [INFO] Worker exiting (pid: 2034)
+[2021-03-12 17:55:40 +0000] [2031] [INFO] Shutting down: Master
+[2021-03-12 17:56:54 +0000] [2476] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 17:56:54 +0000] [2476] [INFO] Listening at: http://0.0.0.0:8000 (2476)
+[2021-03-12 17:56:54 +0000] [2476] [INFO] Using worker: sync
+[2021-03-12 17:56:54 +0000] [2479] [INFO] Booting worker with pid: 2479
+[2021-03-12 17:56:54 +0000] [2479] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/anaconda3/envs/project/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/senior-project/wsgi.py", line 1, in <module>
+    from app import app
+  File "/root/senior-project/app/__init__.py", line 12, in <module>
+    from app import routes
+  File "/root/senior-project/app/routes.py", line 36, in <module>
+    @app.route('/upload2',methods =['POST'])
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1315, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1284, in add_url_rule
+    "existing endpoint function: %s" % endpoint
+AssertionError: View function mapping is overwriting an existing endpoint function: upload_file
+[2021-03-12 17:56:54 +0000] [2479] [INFO] Worker exiting (pid: 2479)
+[2021-03-12 17:56:54 +0000] [2476] [INFO] Shutting down: Master
+[2021-03-12 17:56:54 +0000] [2476] [INFO] Reason: Worker failed to boot.
+[2021-03-12 17:56:57 +0000] [2487] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 17:56:57 +0000] [2487] [INFO] Listening at: http://0.0.0.0:8000 (2487)
+[2021-03-12 17:56:57 +0000] [2487] [INFO] Using worker: sync
+[2021-03-12 17:56:57 +0000] [2490] [INFO] Booting worker with pid: 2490
+[2021-03-12 17:56:58 +0000] [2490] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/anaconda3/envs/project/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/senior-project/wsgi.py", line 1, in <module>
+    from app import app
+  File "/root/senior-project/app/__init__.py", line 12, in <module>
+    from app import routes
+  File "/root/senior-project/app/routes.py", line 36, in <module>
+    @app.route('/upload2',methods =['POST'])
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1315, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1284, in add_url_rule
+    "existing endpoint function: %s" % endpoint
+AssertionError: View function mapping is overwriting an existing endpoint function: upload_file
+[2021-03-12 17:56:58 +0000] [2490] [INFO] Worker exiting (pid: 2490)
+[2021-03-12 17:56:58 +0000] [2487] [INFO] Shutting down: Master
+[2021-03-12 17:56:58 +0000] [2487] [INFO] Reason: Worker failed to boot.
+[2021-03-12 17:57:41 +0000] [2605] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 17:57:41 +0000] [2605] [INFO] Listening at: http://0.0.0.0:8000 (2605)
+[2021-03-12 17:57:41 +0000] [2605] [INFO] Using worker: sync
+[2021-03-12 17:57:41 +0000] [2608] [INFO] Booting worker with pid: 2608
+[2021-03-12 18:02:15 +0000] [2605] [INFO] Handling signal: int
+[2021-03-12 18:02:15 +0000] [2608] [INFO] Worker exiting (pid: 2608)
+[2021-03-12 18:02:15 +0000] [2605] [INFO] Shutting down: Master
+[2021-03-12 18:02:17 +0000] [3036] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 18:02:17 +0000] [3036] [INFO] Listening at: http://0.0.0.0:8000 (3036)
+[2021-03-12 18:02:17 +0000] [3036] [INFO] Using worker: sync
+[2021-03-12 18:02:17 +0000] [3039] [INFO] Booting worker with pid: 3039
+[2021-03-12 18:07:12,210] ERROR in app: Exception on /upload2 [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 45, in upload_file2
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/091853f3-5e9b-440a-8290-593191842925495803334.mp4'
+[2021-03-12 18:07:12 +0000] [3039] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/http/message.py", line 186, in __init__
+    super().__init__(cfg, unreader)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/http/message.py", line 53, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/http/message.py", line 235, in parse
+    self.headers = self.parse_headers(data[:idx])
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/gunicorn/http/message.py", line 73, in parse_headers
+    remote_addr = self.unreader.sock.getpeername()
+OSError: [Errno 107] Transport endpoint is not connected
+[2021-03-12 18:07:43 +0000] [3036] [INFO] Handling signal: int
+[2021-03-12 18:07:43 +0000] [3039] [INFO] Worker exiting (pid: 3039)
+[2021-03-12 18:07:43 +0000] [3036] [INFO] Shutting down: Master
+[2021-03-12 18:07:49 +0000] [3552] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 18:07:49 +0000] [3552] [INFO] Listening at: http://0.0.0.0:8000 (3552)
+[2021-03-12 18:07:49 +0000] [3552] [INFO] Using worker: sync
+[2021-03-12 18:07:49 +0000] [3558] [INFO] Booting worker with pid: 3558
+[2021-03-12 18:08:48 +0000] [3552] [INFO] Handling signal: int
+[2021-03-12 18:08:48 +0000] [3558] [INFO] Worker exiting (pid: 3558)
+[2021-03-12 18:08:48 +0000] [3552] [INFO] Shutting down: Master
+[2021-03-12 18:08:53 +0000] [3655] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 18:08:53 +0000] [3655] [INFO] Listening at: http://0.0.0.0:8000 (3655)
+[2021-03-12 18:08:53 +0000] [3655] [INFO] Using worker: sync
+[2021-03-12 18:08:53 +0000] [3658] [INFO] Booting worker with pid: 3658
+[2021-03-12 18:17:51 +0000] [3655] [INFO] Handling signal: int
+[2021-03-12 18:17:51 +0000] [3658] [INFO] Worker exiting (pid: 3658)
+[2021-03-12 18:17:51 +0000] [3655] [INFO] Shutting down: Master
+[2021-03-12 18:17:52 +0000] [4477] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 18:17:52 +0000] [4477] [INFO] Listening at: http://0.0.0.0:8000 (4477)
+[2021-03-12 18:17:52 +0000] [4477] [INFO] Using worker: sync
+[2021-03-12 18:17:52 +0000] [4480] [INFO] Booting worker with pid: 4480
+[2021-03-12 18:22:24,809] ERROR in app: Exception on /test [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 45, in upload_file2
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/70d46f91-a159-4b57-bcf4-ff636efdb75f1317438846.mp4'
+[2021-03-12 18:22:42 +0000] [4477] [INFO] Handling signal: int
+[2021-03-12 18:22:42 +0000] [4480] [INFO] Worker exiting (pid: 4480)
+[2021-03-12 18:22:42 +0000] [4477] [INFO] Shutting down: Master
+[2021-03-12 18:22:50 +0000] [4943] [INFO] Starting gunicorn 20.0.4
+[2021-03-12 18:22:50 +0000] [4943] [INFO] Listening at: http://0.0.0.0:8000 (4943)
+[2021-03-12 18:22:50 +0000] [4943] [INFO] Using worker: sync
+[2021-03-12 18:22:50 +0000] [4946] [INFO] Booting worker with pid: 4946
+[2021-03-12 20:35:38 +0000] [5624] [INFO] Booting worker with pid: 5624
+[2021-03-12 20:35:38 +0000] [4943] [INFO] Handling signal: hup
+[2021-03-12 20:35:38 +0000] [4943] [INFO] Hang up: Master
+[2021-03-12 20:35:38 +0000] [5625] [INFO] Booting worker with pid: 5625
+[2021-03-12 20:35:39 +0000] [5624] [INFO] Worker exiting (pid: 5624)
+[2021-03-12 21:02:27 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:5625)
+[2021-03-12 21:02:27 +0000] [5625] [INFO] Worker exiting (pid: 5625)
+[2021-03-12 21:02:27 +0000] [5690] [INFO] Booting worker with pid: 5690
+[2021-03-13 01:41:52 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:5690)
+[2021-03-13 01:41:52 +0000] [5690] [INFO] Worker exiting (pid: 5690)
+[2021-03-13 01:41:52 +0000] [6573] [INFO] Booting worker with pid: 6573
+[2021-03-13 04:54:28 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:6573)
+[2021-03-13 04:54:28 +0000] [6573] [INFO] Worker exiting (pid: 6573)
+[2021-03-13 04:54:28 +0000] [7512] [INFO] Booting worker with pid: 7512
+[2021-03-13 07:27:32 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:7512)
+[2021-03-13 07:27:32 +0000] [7512] [INFO] Worker exiting (pid: 7512)
+[2021-03-13 07:27:32 +0000] [8015] [INFO] Booting worker with pid: 8015
+[2021-03-13 09:46:39 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:8015)
+[2021-03-13 09:46:39 +0000] [8015] [INFO] Worker exiting (pid: 8015)
+[2021-03-13 09:46:39 +0000] [8648] [INFO] Booting worker with pid: 8648
+[2021-03-13 09:56:40 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:8648)
+[2021-03-13 09:56:40 +0000] [8648] [INFO] Worker exiting (pid: 8648)
+[2021-03-13 09:56:40 +0000] [8666] [INFO] Booting worker with pid: 8666
+[2021-03-13 15:18:47 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:8666)
+[2021-03-13 15:18:47 +0000] [8666] [INFO] Worker exiting (pid: 8666)
+[2021-03-13 15:18:47 +0000] [9489] [INFO] Booting worker with pid: 9489
+[2021-03-13 20:55:06 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:9489)
+[2021-03-13 20:55:06 +0000] [9489] [INFO] Worker exiting (pid: 9489)
+[2021-03-13 20:55:06 +0000] [18672] [INFO] Booting worker with pid: 18672
+[2021-03-14 03:46:22 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:18672)
+[2021-03-14 03:46:22 +0000] [18672] [INFO] Worker exiting (pid: 18672)
+[2021-03-14 03:46:22 +0000] [20277] [INFO] Booting worker with pid: 20277
+[2021-03-14 04:07:41 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:20277)
+[2021-03-14 04:07:41 +0000] [20277] [INFO] Worker exiting (pid: 20277)
+[2021-03-14 04:07:41 +0000] [20348] [INFO] Booting worker with pid: 20348
+[2021-03-14 09:35:15 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:20348)
+[2021-03-14 09:35:15 +0000] [20348] [INFO] Worker exiting (pid: 20348)
+[2021-03-14 09:35:15 +0000] [22223] [INFO] Booting worker with pid: 22223
+[2021-03-14 09:45:16 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:22223)
+[2021-03-14 09:45:16 +0000] [22223] [INFO] Worker exiting (pid: 22223)
+[2021-03-14 09:45:16 +0000] [22273] [INFO] Booting worker with pid: 22273
+[2021-03-14 09:55:17 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:22273)
+[2021-03-14 09:55:17 +0000] [22273] [INFO] Worker exiting (pid: 22273)
+[2021-03-14 09:55:17 +0000] [22301] [INFO] Booting worker with pid: 22301
+[2021-03-14 10:05:18 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:22301)
+[2021-03-14 10:05:18 +0000] [22301] [INFO] Worker exiting (pid: 22301)
+[2021-03-14 10:05:18 +0000] [22356] [INFO] Booting worker with pid: 22356
+[2021-03-14 23:11:20 +0000] [4943] [CRITICAL] WORKER TIMEOUT (pid:22356)
+[2021-03-14 23:11:20 +0000] [22356] [INFO] Worker exiting (pid: 22356)
+[2021-03-14 23:11:20 +0000] [25507] [INFO] Booting worker with pid: 25507
+[2021-03-15 10:40:21,477] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 10:40:57,930] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 10:41:40,184] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 11:49:36,965] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 11:49:50,959] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 12:22:38,416] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 17:45:13,604] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 18:07:14,888] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-15 18:08:41 +0000] [33987] [INFO] Starting gunicorn 20.0.4
+[2021-03-15 18:08:41 +0000] [33987] [INFO] Listening at: http://0.0.0.0:8000 (33987)
+[2021-03-15 18:08:41 +0000] [33987] [INFO] Using worker: sync
+[2021-03-15 18:08:41 +0000] [33991] [INFO] Booting worker with pid: 33991
+[2021-03-15 18:13:36 +0000] [33987] [INFO] Handling signal: int
+[2021-03-15 18:13:36 +0000] [33991] [INFO] Worker exiting (pid: 33991)
+[2021-03-15 18:13:36 +0000] [33987] [INFO] Shutting down: Master
+[2021-03-15 18:13:37 +0000] [34301] [INFO] Starting gunicorn 20.0.4
+[2021-03-15 18:13:37 +0000] [34301] [INFO] Listening at: http://0.0.0.0:8000 (34301)
+[2021-03-15 18:13:37 +0000] [34301] [INFO] Using worker: sync
+[2021-03-15 18:13:37 +0000] [34304] [INFO] Booting worker with pid: 34304
+[2021-03-15 18:13:37 +0000] [34305] [INFO] Booting worker with pid: 34305
+[2021-03-15 18:13:37 +0000] [34306] [INFO] Booting worker with pid: 34306
+[2021-03-15 18:13:46 +0000] [34301] [INFO] Handling signal: int
+[2021-03-15 18:13:46 +0000] [34304] [INFO] Worker exiting (pid: 34304)
+[2021-03-15 18:13:46 +0000] [34305] [INFO] Worker exiting (pid: 34305)
+[2021-03-15 18:13:46 +0000] [34306] [INFO] Worker exiting (pid: 34306)
+[2021-03-15 18:13:47 +0000] [34301] [INFO] Shutting down: Master
+[2021-03-15 18:13:58 +0000] [34334] [INFO] Starting gunicorn 20.0.4
+[2021-03-15 18:13:58 +0000] [34334] [INFO] Listening at: http://0.0.0.0:8000 (34334)
+[2021-03-15 18:13:58 +0000] [34334] [INFO] Using worker: sync
+[2021-03-15 18:13:58 +0000] [34337] [INFO] Booting worker with pid: 34337
+[2021-03-15 18:13:58 +0000] [34338] [INFO] Booting worker with pid: 34338
+[2021-03-15 18:13:58 +0000] [34339] [INFO] Booting worker with pid: 34339
+[2021-03-15 18:13:59 +0000] [34340] [INFO] Booting worker with pid: 34340
+[2021-03-15 18:13:59 +0000] [34341] [INFO] Booting worker with pid: 34341
+[2021-03-15 18:13:59 +0000] [34342] [INFO] Booting worker with pid: 34342
+[2021-03-15 18:13:59 +0000] [34343] [INFO] Booting worker with pid: 34343
+[2021-03-15 18:13:59 +0000] [34344] [INFO] Booting worker with pid: 34344
+[2021-03-15 18:13:59 +0000] [34347] [INFO] Booting worker with pid: 34347
+[2021-03-15 18:13:59 +0000] [34348] [INFO] Booting worker with pid: 34348
+[2021-03-15 18:42:11 +0000] [36001] [INFO] Booting worker with pid: 36001
+[2021-03-15 18:42:54 +0000] [36022] [INFO] Booting worker with pid: 36022
+[2021-03-15 18:50:48,887] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/18b8e5fa-34cc-4a79-bedb-5327b27cc739671220090.mp4'
+[2021-03-15 18:51:57,282] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/18b8e5fa-34cc-4a79-bedb-5327b27cc739671220090.mp4'
+[2021-03-15 18:52:08,108] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/18b8e5fa-34cc-4a79-bedb-5327b27cc739671220090.mp4'
+[2021-03-15 19:17:46 +0000] [37428] [INFO] Booting worker with pid: 37428
+[2021-03-15 19:17:53 +0000] [37429] [INFO] Booting worker with pid: 37429
+[2021-03-15 19:22:00 +0000] [34334] [INFO] Handling signal: int
+[2021-03-15 19:22:00 +0000] [36001] [INFO] Worker exiting (pid: 36001)
+[2021-03-15 19:22:00 +0000] [37429] [INFO] Worker exiting (pid: 37429)
+[2021-03-15 19:22:00 +0000] [37428] [INFO] Worker exiting (pid: 37428)
+[2021-03-15 19:22:00 +0000] [34348] [INFO] Worker exiting (pid: 34348)
+[2021-03-15 19:22:00 +0000] [34341] [INFO] Worker exiting (pid: 34341)
+[2021-03-15 19:22:00 +0000] [34339] [INFO] Worker exiting (pid: 34339)
+[2021-03-15 19:22:00 +0000] [34343] [INFO] Worker exiting (pid: 34343)
+[2021-03-15 19:22:00 +0000] [34340] [INFO] Worker exiting (pid: 34340)
+[2021-03-15 19:22:00 +0000] [34342] [INFO] Worker exiting (pid: 34342)
+[2021-03-15 19:22:00 +0000] [34344] [INFO] Worker exiting (pid: 34344)
+[2021-03-15 19:22:02 +0000] [34334] [INFO] Shutting down: Master
+[2021-03-15 19:24:17 +0000] [37590] [INFO] Starting gunicorn 20.0.4
+[2021-03-15 19:24:17 +0000] [37590] [INFO] Listening at: http://0.0.0.0:8000 (37590)
+[2021-03-15 19:24:17 +0000] [37590] [INFO] Using worker: sync
+[2021-03-15 19:24:17 +0000] [37594] [INFO] Booting worker with pid: 37594
+[2021-03-15 19:24:17 +0000] [37595] [INFO] Booting worker with pid: 37595
+[2021-03-15 19:24:17 +0000] [37596] [INFO] Booting worker with pid: 37596
+[2021-03-15 19:24:17 +0000] [37597] [INFO] Booting worker with pid: 37597
+[2021-03-15 19:24:17 +0000] [37598] [INFO] Booting worker with pid: 37598
+[2021-03-15 19:24:17 +0000] [37599] [INFO] Booting worker with pid: 37599
+[2021-03-15 19:24:17 +0000] [37600] [INFO] Booting worker with pid: 37600
+[2021-03-15 19:24:17 +0000] [37601] [INFO] Booting worker with pid: 37601
+[2021-03-15 19:24:17 +0000] [37602] [INFO] Booting worker with pid: 37602
+[2021-03-15 19:24:17 +0000] [37603] [INFO] Booting worker with pid: 37603
+[2021-03-15 19:24:35 +0000] [37590] [INFO] Handling signal: int
+[2021-03-15 19:24:36 +0000] [37594] [INFO] Worker exiting (pid: 37594)
+[2021-03-15 19:24:36 +0000] [37597] [INFO] Worker exiting (pid: 37597)
+[2021-03-15 19:24:36 +0000] [37599] [INFO] Worker exiting (pid: 37599)
+[2021-03-15 19:24:36 +0000] [37598] [INFO] Worker exiting (pid: 37598)
+[2021-03-15 19:24:36 +0000] [37595] [INFO] Worker exiting (pid: 37595)
+[2021-03-15 19:24:36 +0000] [37600] [INFO] Worker exiting (pid: 37600)
+[2021-03-15 19:24:36 +0000] [37596] [INFO] Worker exiting (pid: 37596)
+[2021-03-15 19:24:36 +0000] [37601] [INFO] Worker exiting (pid: 37601)
+[2021-03-15 19:24:36 +0000] [37602] [INFO] Worker exiting (pid: 37602)
+[2021-03-15 19:24:36 +0000] [37603] [INFO] Worker exiting (pid: 37603)
+[2021-03-15 19:24:36 +0000] [37590] [INFO] Shutting down: Master
+[2021-03-15 19:24:51 +0000] [37615] [INFO] Starting gunicorn 20.0.4
+[2021-03-15 19:24:51 +0000] [37615] [INFO] Listening at: http://0.0.0.0:8000 (37615)
+[2021-03-15 19:24:51 +0000] [37615] [INFO] Using worker: sync
+[2021-03-15 19:24:51 +0000] [37618] [INFO] Booting worker with pid: 37618
+[2021-03-15 19:24:51 +0000] [37619] [INFO] Booting worker with pid: 37619
+[2021-03-15 19:24:51 +0000] [37620] [INFO] Booting worker with pid: 37620
+[2021-03-15 19:24:51 +0000] [37621] [INFO] Booting worker with pid: 37621
+[2021-03-15 19:24:51 +0000] [37622] [INFO] Booting worker with pid: 37622
+[2021-03-15 19:24:51 +0000] [37623] [INFO] Booting worker with pid: 37623
+[2021-03-15 19:24:51 +0000] [37624] [INFO] Booting worker with pid: 37624
+[2021-03-15 19:24:51 +0000] [37625] [INFO] Booting worker with pid: 37625
+[2021-03-15 19:24:51 +0000] [37626] [INFO] Booting worker with pid: 37626
+[2021-03-15 19:24:51 +0000] [37627] [INFO] Booting worker with pid: 37627
+[2021-03-15 19:29:11 +0000] [37638] [INFO] Booting worker with pid: 37638
+[2021-03-15 19:29:11 +0000] [37639] [INFO] Booting worker with pid: 37639
+[2021-03-15 19:29:11 +0000] [37640] [INFO] Booting worker with pid: 37640
+[2021-03-15 19:29:11 +0000] [37641] [INFO] Booting worker with pid: 37641
+[2021-03-15 19:29:12 +0000] [37642] [INFO] Booting worker with pid: 37642
+[2021-03-15 19:29:12 +0000] [37615] [INFO] Handling signal: hup
+[2021-03-15 19:29:12 +0000] [37615] [INFO] Hang up: Master
+[2021-03-15 19:29:12 +0000] [37644] [INFO] Booting worker with pid: 37644
+[2021-03-15 19:29:12 +0000] [37643] [INFO] Booting worker with pid: 37643
+[2021-03-15 19:29:12 +0000] [37645] [INFO] Booting worker with pid: 37645
+[2021-03-15 19:29:12 +0000] [37646] [INFO] Booting worker with pid: 37646
+[2021-03-15 19:29:12 +0000] [37647] [INFO] Booting worker with pid: 37647
+[2021-03-15 19:29:12 +0000] [37648] [INFO] Booting worker with pid: 37648
+[2021-03-15 19:29:12 +0000] [37650] [INFO] Booting worker with pid: 37650
+[2021-03-15 19:29:12 +0000] [37651] [INFO] Booting worker with pid: 37651
+[2021-03-15 19:29:12 +0000] [37652] [INFO] Booting worker with pid: 37652
+[2021-03-15 19:29:12 +0000] [37649] [INFO] Booting worker with pid: 37649
+[2021-03-15 19:29:12 +0000] [37638] [INFO] Worker exiting (pid: 37638)
+[2021-03-15 19:29:13 +0000] [37639] [INFO] Worker exiting (pid: 37639)
+[2021-03-15 19:29:13 +0000] [37640] [INFO] Worker exiting (pid: 37640)
+[2021-03-15 19:29:13 +0000] [37641] [INFO] Worker exiting (pid: 37641)
+[2021-03-15 19:29:13 +0000] [37642] [INFO] Worker exiting (pid: 37642)
+[2021-03-16 09:43:36 +0000] [37651] [INFO] Parent changed, shutting down: <Worker 37651>
+[2021-03-16 09:43:36 +0000] [37651] [INFO] Worker exiting (pid: 37651)
+[2021-03-16 09:43:45 +0000] [37652] [INFO] Parent changed, shutting down: <Worker 37652>
+[2021-03-16 09:43:45 +0000] [37652] [INFO] Worker exiting (pid: 37652)
+[2021-03-16 09:43:54 +0000] [41053] [INFO] Starting gunicorn 20.0.4
+[2021-03-16 09:43:54 +0000] [41053] [INFO] Listening at: http://0.0.0.0:8000 (41053)
+[2021-03-16 09:43:54 +0000] [41053] [INFO] Using worker: sync
+[2021-03-16 09:43:54 +0000] [41057] [INFO] Booting worker with pid: 41057
+[2021-03-16 09:43:54 +0000] [41058] [INFO] Booting worker with pid: 41058
+[2021-03-16 09:43:54 +0000] [41059] [INFO] Booting worker with pid: 41059
+[2021-03-16 09:43:54 +0000] [41060] [INFO] Booting worker with pid: 41060
+[2021-03-16 09:43:55 +0000] [41061] [INFO] Booting worker with pid: 41061
+[2021-03-16 09:43:55 +0000] [41062] [INFO] Booting worker with pid: 41062
+[2021-03-16 09:43:55 +0000] [41063] [INFO] Booting worker with pid: 41063
+[2021-03-16 09:43:55 +0000] [41064] [INFO] Booting worker with pid: 41064
+[2021-03-16 09:43:55 +0000] [41065] [INFO] Booting worker with pid: 41065
+[2021-03-16 09:43:55 +0000] [41066] [INFO] Booting worker with pid: 41066
+[2021-03-16 11:55:17 +0000] [44947] [INFO] Booting worker with pid: 44947
+[2021-03-16 11:55:17 +0000] [44948] [INFO] Booting worker with pid: 44948
+[2021-03-16 11:55:17 +0000] [44949] [INFO] Booting worker with pid: 44949
+[2021-03-16 11:55:17 +0000] [44950] [INFO] Booting worker with pid: 44950
+[2021-03-16 11:55:17 +0000] [44951] [INFO] Booting worker with pid: 44951
+[2021-03-16 11:55:17 +0000] [44952] [INFO] Booting worker with pid: 44952
+[2021-03-16 11:55:17 +0000] [44953] [INFO] Booting worker with pid: 44953
+[2021-03-16 11:55:17 +0000] [44954] [INFO] Booting worker with pid: 44954
+[2021-03-16 11:55:17 +0000] [44955] [INFO] Booting worker with pid: 44955
+[2021-03-16 11:55:17 +0000] [41053] [INFO] Handling signal: hup
+[2021-03-16 11:55:17 +0000] [41053] [INFO] Hang up: Master
+[2021-03-16 11:55:17 +0000] [44956] [INFO] Booting worker with pid: 44956
+[2021-03-16 11:55:17 +0000] [44957] [INFO] Booting worker with pid: 44957
+[2021-03-16 11:55:17 +0000] [44958] [INFO] Booting worker with pid: 44958
+[2021-03-16 11:55:17 +0000] [44959] [INFO] Booting worker with pid: 44959
+[2021-03-16 11:55:17 +0000] [44960] [INFO] Booting worker with pid: 44960
+[2021-03-16 11:55:17 +0000] [44961] [INFO] Booting worker with pid: 44961
+[2021-03-16 11:55:17 +0000] [44962] [INFO] Booting worker with pid: 44962
+[2021-03-16 11:55:17 +0000] [44963] [INFO] Booting worker with pid: 44963
+[2021-03-16 11:55:17 +0000] [44964] [INFO] Booting worker with pid: 44964
+[2021-03-16 11:55:17 +0000] [44965] [INFO] Booting worker with pid: 44965
+[2021-03-16 11:55:17 +0000] [44966] [INFO] Booting worker with pid: 44966
+[2021-03-16 11:55:18 +0000] [44947] [INFO] Worker exiting (pid: 44947)
+[2021-03-16 11:55:19 +0000] [44948] [INFO] Worker exiting (pid: 44948)
+[2021-03-16 11:55:19 +0000] [44949] [INFO] Worker exiting (pid: 44949)
+[2021-03-16 11:55:19 +0000] [44950] [INFO] Worker exiting (pid: 44950)
+[2021-03-16 11:55:19 +0000] [44951] [INFO] Worker exiting (pid: 44951)
+[2021-03-16 11:55:20 +0000] [44952] [INFO] Worker exiting (pid: 44952)
+[2021-03-16 11:55:20 +0000] [44953] [INFO] Worker exiting (pid: 44953)
+[2021-03-16 11:55:20 +0000] [44954] [INFO] Worker exiting (pid: 44954)
+[2021-03-16 11:55:20 +0000] [44955] [INFO] Worker exiting (pid: 44955)
+[2021-03-16 11:55:20 +0000] [44956] [INFO] Worker exiting (pid: 44956)
+[2021-03-16 20:08:53 +0000] [41053] [CRITICAL] WORKER TIMEOUT (pid:44957)
+[2021-03-16 20:08:53 +0000] [44957] [INFO] Worker exiting (pid: 44957)
+[2021-03-16 20:08:53 +0000] [46861] [INFO] Booting worker with pid: 46861
+[2021-03-17 06:40:13,080] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-17 07:22:34,125] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-17 07:37:04,659] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 61, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-17 07:38:37 +0000] [41053] [INFO] Handling signal: term
+[2021-03-17 07:38:37 +0000] [44959] [INFO] Worker exiting (pid: 44959)
+[2021-03-17 07:38:37 +0000] [44958] [INFO] Worker exiting (pid: 44958)
+[2021-03-17 07:38:37 +0000] [44960] [INFO] Worker exiting (pid: 44960)
+[2021-03-17 07:38:37 +0000] [44961] [INFO] Worker exiting (pid: 44961)
+[2021-03-17 07:38:37 +0000] [44962] [INFO] Worker exiting (pid: 44962)
+[2021-03-17 07:38:37 +0000] [44963] [INFO] Worker exiting (pid: 44963)
+[2021-03-17 07:38:37 +0000] [44964] [INFO] Worker exiting (pid: 44964)
+[2021-03-17 07:38:37 +0000] [44965] [INFO] Worker exiting (pid: 44965)
+[2021-03-17 07:38:37 +0000] [44966] [INFO] Worker exiting (pid: 44966)
+[2021-03-17 07:38:37 +0000] [46861] [INFO] Worker exiting (pid: 46861)
+[2021-03-17 07:38:37 +0000] [41053] [INFO] Shutting down: Master
+[2021-03-17 07:39:23 +0000] [60541] [INFO] Starting gunicorn 20.0.4
+[2021-03-17 07:39:23 +0000] [60541] [INFO] Listening at: http://0.0.0.0:8000 (60541)
+[2021-03-17 07:39:23 +0000] [60541] [INFO] Using worker: sync
+[2021-03-17 07:39:23 +0000] [60545] [INFO] Booting worker with pid: 60545
+[2021-03-17 07:39:23 +0000] [60546] [INFO] Booting worker with pid: 60546
+[2021-03-17 07:39:23 +0000] [60547] [INFO] Booting worker with pid: 60547
+[2021-03-17 07:39:23 +0000] [60548] [INFO] Booting worker with pid: 60548
+[2021-03-17 07:39:23 +0000] [60549] [INFO] Booting worker with pid: 60549
+[2021-03-17 07:39:23 +0000] [60550] [INFO] Booting worker with pid: 60550
+[2021-03-17 07:39:23 +0000] [60551] [INFO] Booting worker with pid: 60551
+[2021-03-17 07:39:23 +0000] [60552] [INFO] Booting worker with pid: 60552
+[2021-03-17 07:39:24 +0000] [60553] [INFO] Booting worker with pid: 60553
+[2021-03-17 07:39:24 +0000] [60554] [INFO] Booting worker with pid: 60554
+[2021-03-17 07:43:25 +0000] [60541] [CRITICAL] WORKER TIMEOUT (pid:60554)
+[2021-03-17 07:43:25 +0000] [60554] [INFO] Worker exiting (pid: 60554)
+[2021-03-17 07:43:26 +0000] [60834] [INFO] Booting worker with pid: 60834
+[2021-03-17 07:44:12 +0000] [60541] [INFO] Handling signal: int
+[2021-03-17 07:44:12 +0000] [60834] [INFO] Worker exiting (pid: 60834)
+[2021-03-17 07:44:12 +0000] [60550] [INFO] Worker exiting (pid: 60550)
+[2021-03-17 07:44:12 +0000] [60551] [INFO] Worker exiting (pid: 60551)
+[2021-03-17 07:44:12 +0000] [60548] [INFO] Worker exiting (pid: 60548)
+[2021-03-17 07:44:12 +0000] [60545] [INFO] Worker exiting (pid: 60545)
+[2021-03-17 07:44:12 +0000] [60552] [INFO] Worker exiting (pid: 60552)
+[2021-03-17 07:44:12 +0000] [60553] [INFO] Worker exiting (pid: 60553)
+[2021-03-17 07:44:12 +0000] [60549] [INFO] Worker exiting (pid: 60549)
+[2021-03-17 07:44:12 +0000] [60546] [INFO] Worker exiting (pid: 60546)
+[2021-03-17 07:44:12 +0000] [60547] [INFO] Worker exiting (pid: 60547)
+[2021-03-17 07:44:13 +0000] [60541] [INFO] Shutting down: Master
+[2021-03-17 07:50:32 +0000] [60967] [INFO] Starting gunicorn 20.0.4
+[2021-03-17 07:50:32 +0000] [60967] [INFO] Listening at: http://0.0.0.0:8000 (60967)
+[2021-03-17 07:50:32 +0000] [60967] [INFO] Using worker: sync
+[2021-03-17 07:50:32 +0000] [60970] [INFO] Booting worker with pid: 60970
+[2021-03-17 07:50:32 +0000] [60971] [INFO] Booting worker with pid: 60971
+[2021-03-17 07:50:32 +0000] [60972] [INFO] Booting worker with pid: 60972
+[2021-03-17 07:50:32 +0000] [60973] [INFO] Booting worker with pid: 60973
+[2021-03-17 07:50:32 +0000] [60974] [INFO] Booting worker with pid: 60974
+[2021-03-17 07:50:32 +0000] [60975] [INFO] Booting worker with pid: 60975
+[2021-03-17 07:50:32 +0000] [60976] [INFO] Booting worker with pid: 60976
+[2021-03-17 07:50:33 +0000] [60977] [INFO] Booting worker with pid: 60977
+[2021-03-17 07:50:33 +0000] [60978] [INFO] Booting worker with pid: 60978
+[2021-03-17 07:50:33 +0000] [60979] [INFO] Booting worker with pid: 60979
+[2021-03-17 07:52:07,362] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 26, in upload_file
+    string = string_represent()
+  File "/root/senior-project/app/routes.py", line 95, in string_represent
+    datalist.sort(key=lambda f: int(re.sub('\D', '', f)))
+  File "/root/senior-project/app/routes.py", line 95, in <lambda>
+    datalist.sort(key=lambda f: int(re.sub('\D', '', f)))
+ValueError: invalid literal for int() with base 10: ''
+[2021-03-17 07:58:53,226] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 26, in upload_file
+    string = string_represent()
+  File "/root/senior-project/app/routes.py", line 95, in string_represent
+    datalist.sort(key=lambda f: int(re.sub('\D', '', f)))
+  File "/root/senior-project/app/routes.py", line 95, in <lambda>
+    datalist.sort(key=lambda f: int(re.sub('\D', '', f)))
+ValueError: invalid literal for int() with base 10: ''
+[2021-03-17 08:00:13 +0000] [60967] [INFO] Handling signal: int
+[2021-03-17 08:00:13 +0000] [60973] [INFO] Worker exiting (pid: 60973)
+[2021-03-17 08:00:13 +0000] [60977] [INFO] Worker exiting (pid: 60977)
+[2021-03-17 08:00:13 +0000] [60975] [INFO] Worker exiting (pid: 60975)
+[2021-03-17 08:00:13 +0000] [60976] [INFO] Worker exiting (pid: 60976)
+[2021-03-17 08:00:13 +0000] [60972] [INFO] Worker exiting (pid: 60972)
+[2021-03-17 08:00:13 +0000] [60970] [INFO] Worker exiting (pid: 60970)
+[2021-03-17 08:00:13 +0000] [60978] [INFO] Worker exiting (pid: 60978)
+[2021-03-17 08:00:13 +0000] [60971] [INFO] Worker exiting (pid: 60971)
+[2021-03-17 08:00:13 +0000] [60974] [INFO] Worker exiting (pid: 60974)
+[2021-03-17 08:00:13 +0000] [60979] [INFO] Worker exiting (pid: 60979)
+[2021-03-17 08:00:13 +0000] [60967] [INFO] Shutting down: Master
+[2021-03-17 08:00:33 +0000] [61005] [INFO] Starting gunicorn 20.0.4
+[2021-03-17 08:00:33 +0000] [61005] [INFO] Listening at: http://0.0.0.0:8000 (61005)
+[2021-03-17 08:00:33 +0000] [61005] [INFO] Using worker: sync
+[2021-03-17 08:00:33 +0000] [61008] [INFO] Booting worker with pid: 61008
+[2021-03-17 08:00:33 +0000] [61009] [INFO] Booting worker with pid: 61009
+[2021-03-17 08:00:33 +0000] [61010] [INFO] Booting worker with pid: 61010
+[2021-03-17 08:00:33 +0000] [61011] [INFO] Booting worker with pid: 61011
+[2021-03-17 08:00:33 +0000] [61012] [INFO] Booting worker with pid: 61012
+[2021-03-17 08:00:33 +0000] [61013] [INFO] Booting worker with pid: 61013
+[2021-03-17 08:00:33 +0000] [61014] [INFO] Booting worker with pid: 61014
+[2021-03-17 08:00:33 +0000] [61015] [INFO] Booting worker with pid: 61015
+[2021-03-17 08:00:33 +0000] [61016] [INFO] Booting worker with pid: 61016
+[2021-03-17 08:00:33 +0000] [61017] [INFO] Booting worker with pid: 61017
+[2021-03-17 08:22:28 +0000] [61005] [INFO] Handling signal: int
+[2021-03-17 08:22:28 +0000] [61009] [INFO] Worker exiting (pid: 61009)
+[2021-03-17 08:22:28 +0000] [61010] [INFO] Worker exiting (pid: 61010)
+[2021-03-17 08:22:28 +0000] [61011] [INFO] Worker exiting (pid: 61011)
+[2021-03-17 08:22:28 +0000] [61012] [INFO] Worker exiting (pid: 61012)
+[2021-03-17 08:22:28 +0000] [61013] [INFO] Worker exiting (pid: 61013)
+[2021-03-17 08:22:28 +0000] [61014] [INFO] Worker exiting (pid: 61014)
+[2021-03-17 08:22:28 +0000] [61015] [INFO] Worker exiting (pid: 61015)
+[2021-03-17 08:22:28 +0000] [61016] [INFO] Worker exiting (pid: 61016)
+[2021-03-17 08:22:28 +0000] [61017] [INFO] Worker exiting (pid: 61017)
+[2021-03-17 08:22:28 +0000] [61008] [INFO] Worker exiting (pid: 61008)
+[2021-03-17 08:22:28 +0000] [61005] [INFO] Shutting down: Master
+[2021-03-17 08:22:45 +0000] [61061] [INFO] Starting gunicorn 20.0.4
+[2021-03-17 08:22:45 +0000] [61061] [INFO] Listening at: http://0.0.0.0:8000 (61061)
+[2021-03-17 08:22:45 +0000] [61061] [INFO] Using worker: sync
+[2021-03-17 08:22:45 +0000] [61064] [INFO] Booting worker with pid: 61064
+[2021-03-17 08:22:45 +0000] [61065] [INFO] Booting worker with pid: 61065
+[2021-03-17 08:22:45 +0000] [61066] [INFO] Booting worker with pid: 61066
+[2021-03-17 08:22:45 +0000] [61067] [INFO] Booting worker with pid: 61067
+[2021-03-17 08:22:45 +0000] [61068] [INFO] Booting worker with pid: 61068
+[2021-03-17 08:22:45 +0000] [61069] [INFO] Booting worker with pid: 61069
+[2021-03-17 08:22:45 +0000] [61070] [INFO] Booting worker with pid: 61070
+[2021-03-17 08:22:45 +0000] [61071] [INFO] Booting worker with pid: 61071
+[2021-03-17 08:22:45 +0000] [61072] [INFO] Booting worker with pid: 61072
+[2021-03-17 08:22:45 +0000] [61073] [INFO] Booting worker with pid: 61073
+[2021-03-17 10:43:51 +0000] [62512] [INFO] Booting worker with pid: 62512
+[2021-03-17 10:43:51 +0000] [62511] [INFO] Booting worker with pid: 62511
+[2021-03-17 10:43:51 +0000] [62513] [INFO] Booting worker with pid: 62513
+[2021-03-17 10:43:51 +0000] [62514] [INFO] Booting worker with pid: 62514
+[2021-03-17 10:43:51 +0000] [62515] [INFO] Booting worker with pid: 62515
+[2021-03-17 10:43:51 +0000] [62516] [INFO] Booting worker with pid: 62516
+[2021-03-17 10:43:51 +0000] [62517] [INFO] Booting worker with pid: 62517
+[2021-03-17 10:43:51 +0000] [62518] [INFO] Booting worker with pid: 62518
+[2021-03-17 10:43:51 +0000] [62519] [INFO] Booting worker with pid: 62519
+[2021-03-17 10:43:52 +0000] [61061] [INFO] Handling signal: hup
+[2021-03-17 10:43:52 +0000] [61061] [INFO] Hang up: Master
+[2021-03-17 10:43:52 +0000] [62521] [INFO] Booting worker with pid: 62521
+[2021-03-17 10:43:52 +0000] [62520] [INFO] Booting worker with pid: 62520
+[2021-03-17 10:43:52 +0000] [62522] [INFO] Booting worker with pid: 62522
+[2021-03-17 10:43:52 +0000] [62523] [INFO] Booting worker with pid: 62523
+[2021-03-17 10:43:52 +0000] [62524] [INFO] Booting worker with pid: 62524
+[2021-03-17 10:43:52 +0000] [62525] [INFO] Booting worker with pid: 62525
+[2021-03-17 10:43:52 +0000] [62527] [INFO] Booting worker with pid: 62527
+[2021-03-17 10:43:52 +0000] [62526] [INFO] Booting worker with pid: 62526
+[2021-03-17 10:43:52 +0000] [62529] [INFO] Booting worker with pid: 62529
+[2021-03-17 10:43:52 +0000] [61061] [INFO] Handling signal: hup
+[2021-03-17 10:43:52 +0000] [61061] [INFO] Hang up: Master
+[2021-03-17 10:43:52 +0000] [62528] [INFO] Booting worker with pid: 62528
+[2021-03-17 10:43:52 +0000] [62531] [INFO] Booting worker with pid: 62531
+[2021-03-17 10:43:52 +0000] [62530] [INFO] Booting worker with pid: 62530
+[2021-03-17 10:43:52 +0000] [62533] [INFO] Booting worker with pid: 62533
+[2021-03-17 10:43:52 +0000] [62532] [INFO] Booting worker with pid: 62532
+[2021-03-17 10:43:52 +0000] [62534] [INFO] Booting worker with pid: 62534
+[2021-03-17 10:43:52 +0000] [62537] [INFO] Booting worker with pid: 62537
+[2021-03-17 10:43:52 +0000] [62536] [INFO] Booting worker with pid: 62536
+[2021-03-17 10:43:52 +0000] [62538] [INFO] Booting worker with pid: 62538
+[2021-03-17 10:43:52 +0000] [62535] [INFO] Booting worker with pid: 62535
+[2021-03-17 10:43:52 +0000] [62539] [INFO] Booting worker with pid: 62539
+[2021-03-17 10:43:56 +0000] [62518] [INFO] Worker exiting (pid: 62518)
+[2021-03-17 10:43:56 +0000] [62511] [INFO] Worker exiting (pid: 62511)
+[2021-03-17 10:43:56 +0000] [62517] [INFO] Worker exiting (pid: 62517)
+[2021-03-17 10:43:56 +0000] [62513] [INFO] Worker exiting (pid: 62513)
+[2021-03-17 10:43:56 +0000] [62514] [INFO] Worker exiting (pid: 62514)
+[2021-03-17 10:43:56 +0000] [62515] [INFO] Worker exiting (pid: 62515)
+[2021-03-17 10:43:56 +0000] [62512] [INFO] Worker exiting (pid: 62512)
+[2021-03-17 10:43:56 +0000] [62519] [INFO] Worker exiting (pid: 62519)
+[2021-03-17 10:43:56 +0000] [62516] [INFO] Worker exiting (pid: 62516)
+[2021-03-17 10:43:56 +0000] [62521] [INFO] Worker exiting (pid: 62521)
+[2021-03-17 10:43:57 +0000] [62524] [INFO] Worker exiting (pid: 62524)
+[2021-03-17 10:43:57 +0000] [62522] [INFO] Worker exiting (pid: 62522)
+[2021-03-17 10:43:57 +0000] [62523] [INFO] Worker exiting (pid: 62523)
+[2021-03-17 10:43:57 +0000] [62520] [INFO] Worker exiting (pid: 62520)
+[2021-03-17 10:43:57 +0000] [62525] [INFO] Worker exiting (pid: 62525)
+[2021-03-17 10:43:57 +0000] [62526] [INFO] Worker exiting (pid: 62526)
+[2021-03-17 10:43:57 +0000] [62527] [INFO] Worker exiting (pid: 62527)
+[2021-03-17 10:43:57 +0000] [62529] [INFO] Worker exiting (pid: 62529)
+[2021-03-17 10:43:57 +0000] [62528] [INFO] Worker exiting (pid: 62528)
+[2021-03-17 23:24:39 +0000] [61061] [CRITICAL] WORKER TIMEOUT (pid:62533)
+[2021-03-17 23:24:39 +0000] [62533] [INFO] Worker exiting (pid: 62533)
+[2021-03-17 23:24:39 +0000] [78869] [INFO] Booting worker with pid: 78869
+[2021-03-18 07:31:19 +0000] [61061] [INFO] Handling signal: term
+[2021-03-18 07:31:19 +0000] [62534] [INFO] Worker exiting (pid: 62534)
+[2021-03-18 07:31:19 +0000] [62530] [INFO] Worker exiting (pid: 62530)
+[2021-03-18 07:31:19 +0000] [62535] [INFO] Worker exiting (pid: 62535)
+[2021-03-18 07:31:19 +0000] [62536] [INFO] Worker exiting (pid: 62536)
+[2021-03-18 07:31:19 +0000] [62532] [INFO] Worker exiting (pid: 62532)
+[2021-03-18 07:31:19 +0000] [62531] [INFO] Worker exiting (pid: 62531)
+[2021-03-18 07:31:19 +0000] [62537] [INFO] Worker exiting (pid: 62537)
+[2021-03-18 07:31:19 +0000] [62538] [INFO] Worker exiting (pid: 62538)
+[2021-03-18 07:31:19 +0000] [62539] [INFO] Worker exiting (pid: 62539)
+[2021-03-18 07:31:19 +0000] [78869] [INFO] Worker exiting (pid: 78869)
+[2021-03-18 07:31:19 +0000] [61061] [INFO] Shutting down: Master
+[2021-03-18 07:31:32 +0000] [80855] [INFO] Starting gunicorn 20.0.4
+[2021-03-18 07:31:32 +0000] [80855] [INFO] Listening at: http://0.0.0.0:8000 (80855)
+[2021-03-18 07:31:32 +0000] [80855] [INFO] Using worker: sync
+[2021-03-18 07:31:32 +0000] [80859] [INFO] Booting worker with pid: 80859
+[2021-03-18 07:31:32 +0000] [80860] [INFO] Booting worker with pid: 80860
+[2021-03-18 07:31:32 +0000] [80861] [INFO] Booting worker with pid: 80861
+[2021-03-18 07:31:32 +0000] [80862] [INFO] Booting worker with pid: 80862
+[2021-03-18 07:31:32 +0000] [80863] [INFO] Booting worker with pid: 80863
+[2021-03-18 07:31:32 +0000] [80864] [INFO] Booting worker with pid: 80864
+[2021-03-18 07:31:32 +0000] [80865] [INFO] Booting worker with pid: 80865
+[2021-03-18 07:31:32 +0000] [80866] [INFO] Booting worker with pid: 80866
+[2021-03-18 07:31:32 +0000] [80867] [INFO] Booting worker with pid: 80867
+[2021-03-18 07:31:32 +0000] [80868] [INFO] Booting worker with pid: 80868
+[2021-03-18 07:39:39 +0000] [80855] [INFO] Handling signal: int
+[2021-03-18 07:39:39 +0000] [80859] [INFO] Worker exiting (pid: 80859)
+[2021-03-18 07:39:39 +0000] [80867] [INFO] Worker exiting (pid: 80867)
+[2021-03-18 07:39:39 +0000] [80868] [INFO] Worker exiting (pid: 80868)
+[2021-03-18 07:39:39 +0000] [80863] [INFO] Worker exiting (pid: 80863)
+[2021-03-18 07:39:39 +0000] [80865] [INFO] Worker exiting (pid: 80865)
+[2021-03-18 07:39:39 +0000] [80860] [INFO] Worker exiting (pid: 80860)
+[2021-03-18 07:39:39 +0000] [80864] [INFO] Worker exiting (pid: 80864)
+[2021-03-18 07:39:39 +0000] [80862] [INFO] Worker exiting (pid: 80862)
+[2021-03-18 07:39:39 +0000] [80866] [INFO] Worker exiting (pid: 80866)
+[2021-03-18 07:39:39 +0000] [80861] [INFO] Worker exiting (pid: 80861)
+[2021-03-18 07:39:39 +0000] [80855] [INFO] Shutting down: Master
+[2021-03-18 07:39:41 +0000] [81196] [INFO] Starting gunicorn 20.0.4
+[2021-03-18 07:39:41 +0000] [81196] [INFO] Listening at: http://0.0.0.0:8000 (81196)
+[2021-03-18 07:39:41 +0000] [81196] [INFO] Using worker: sync
+[2021-03-18 07:39:41 +0000] [81199] [INFO] Booting worker with pid: 81199
+[2021-03-18 07:39:41 +0000] [81200] [INFO] Booting worker with pid: 81200
+[2021-03-18 07:39:41 +0000] [81201] [INFO] Booting worker with pid: 81201
+[2021-03-18 07:39:41 +0000] [81202] [INFO] Booting worker with pid: 81202
+[2021-03-18 07:39:41 +0000] [81203] [INFO] Booting worker with pid: 81203
+[2021-03-18 07:39:41 +0000] [81204] [INFO] Booting worker with pid: 81204
+[2021-03-18 07:39:41 +0000] [81205] [INFO] Booting worker with pid: 81205
+[2021-03-18 07:39:41 +0000] [81206] [INFO] Booting worker with pid: 81206
+[2021-03-18 07:39:41 +0000] [81207] [INFO] Booting worker with pid: 81207
+[2021-03-18 07:39:41 +0000] [81208] [INFO] Booting worker with pid: 81208
+[2021-03-18 07:42:40,485] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/c062bbba-1ede-47ad-9d90-a5f822cf8b081478334555.mp4'
+[2021-03-18 07:42:51 +0000] [81196] [INFO] Handling signal: int
+[2021-03-18 07:42:51 +0000] [81207] [INFO] Worker exiting (pid: 81207)
+[2021-03-18 07:42:51 +0000] [81200] [INFO] Worker exiting (pid: 81200)
+[2021-03-18 07:42:51 +0000] [81206] [INFO] Worker exiting (pid: 81206)
+[2021-03-18 07:42:51 +0000] [81208] [INFO] Worker exiting (pid: 81208)
+[2021-03-18 07:42:51 +0000] [81199] [INFO] Worker exiting (pid: 81199)
+[2021-03-18 07:42:51 +0000] [81203] [INFO] Worker exiting (pid: 81203)
+[2021-03-18 07:42:51 +0000] [81202] [INFO] Worker exiting (pid: 81202)
+[2021-03-18 07:42:51 +0000] [81201] [INFO] Worker exiting (pid: 81201)
+[2021-03-18 07:42:51 +0000] [81205] [INFO] Worker exiting (pid: 81205)
+[2021-03-18 07:42:51 +0000] [81204] [INFO] Worker exiting (pid: 81204)
+[2021-03-18 07:42:51 +0000] [81196] [INFO] Shutting down: Master
+[2021-03-18 07:42:53 +0000] [81254] [INFO] Starting gunicorn 20.0.4
+[2021-03-18 07:42:53 +0000] [81254] [INFO] Listening at: http://0.0.0.0:8000 (81254)
+[2021-03-18 07:42:53 +0000] [81254] [INFO] Using worker: sync
+[2021-03-18 07:42:53 +0000] [81257] [INFO] Booting worker with pid: 81257
+[2021-03-18 07:42:53 +0000] [81258] [INFO] Booting worker with pid: 81258
+[2021-03-18 07:42:53 +0000] [81259] [INFO] Booting worker with pid: 81259
+[2021-03-18 07:42:53 +0000] [81260] [INFO] Booting worker with pid: 81260
+[2021-03-18 07:42:53 +0000] [81261] [INFO] Booting worker with pid: 81261
+[2021-03-18 07:42:53 +0000] [81262] [INFO] Booting worker with pid: 81262
+[2021-03-18 07:42:53 +0000] [81263] [INFO] Booting worker with pid: 81263
+[2021-03-18 07:42:53 +0000] [81264] [INFO] Booting worker with pid: 81264
+[2021-03-18 07:42:53 +0000] [81265] [INFO] Booting worker with pid: 81265
+[2021-03-18 07:42:53 +0000] [81266] [INFO] Booting worker with pid: 81266
+[2021-03-18 10:06:19 +0000] [82606] [INFO] Booting worker with pid: 82606
+[2021-03-18 10:06:19 +0000] [82607] [INFO] Booting worker with pid: 82607
+[2021-03-18 10:06:19 +0000] [82608] [INFO] Booting worker with pid: 82608
+[2021-03-18 10:06:19 +0000] [82609] [INFO] Booting worker with pid: 82609
+[2021-03-18 10:06:20 +0000] [82610] [INFO] Booting worker with pid: 82610
+[2021-03-18 10:06:20 +0000] [82611] [INFO] Booting worker with pid: 82611
+[2021-03-18 10:06:20 +0000] [82612] [INFO] Booting worker with pid: 82612
+[2021-03-18 10:06:20 +0000] [82613] [INFO] Booting worker with pid: 82613
+[2021-03-18 10:06:20 +0000] [82614] [INFO] Booting worker with pid: 82614
+[2021-03-18 10:06:20 +0000] [82615] [INFO] Booting worker with pid: 82615
+[2021-03-18 10:06:20 +0000] [81254] [INFO] Handling signal: hup
+[2021-03-18 10:06:20 +0000] [81254] [INFO] Hang up: Master
+[2021-03-18 10:06:20 +0000] [82616] [INFO] Booting worker with pid: 82616
+[2021-03-18 10:06:20 +0000] [82617] [INFO] Booting worker with pid: 82617
+[2021-03-18 10:06:20 +0000] [82618] [INFO] Booting worker with pid: 82618
+[2021-03-18 10:06:20 +0000] [82619] [INFO] Booting worker with pid: 82619
+[2021-03-18 10:06:20 +0000] [82621] [INFO] Booting worker with pid: 82621
+[2021-03-18 10:06:20 +0000] [82622] [INFO] Booting worker with pid: 82622
+[2021-03-18 10:06:20 +0000] [82623] [INFO] Booting worker with pid: 82623
+[2021-03-18 10:06:20 +0000] [82620] [INFO] Booting worker with pid: 82620
+[2021-03-18 10:06:20 +0000] [82624] [INFO] Booting worker with pid: 82624
+[2021-03-18 10:06:20 +0000] [82625] [INFO] Booting worker with pid: 82625
+[2021-03-18 10:06:22 +0000] [82607] [INFO] Worker exiting (pid: 82607)
+[2021-03-18 10:06:22 +0000] [82608] [INFO] Worker exiting (pid: 82608)
+[2021-03-18 10:06:22 +0000] [82606] [INFO] Worker exiting (pid: 82606)
+[2021-03-18 10:06:22 +0000] [82609] [INFO] Worker exiting (pid: 82609)
+[2021-03-18 10:06:22 +0000] [82610] [INFO] Worker exiting (pid: 82610)
+[2021-03-18 10:06:22 +0000] [82611] [INFO] Worker exiting (pid: 82611)
+[2021-03-18 10:06:22 +0000] [82612] [INFO] Worker exiting (pid: 82612)
+[2021-03-18 10:06:23 +0000] [82615] [INFO] Worker exiting (pid: 82615)
+[2021-03-18 10:06:23 +0000] [82613] [INFO] Worker exiting (pid: 82613)
+[2021-03-18 10:06:23 +0000] [82614] [INFO] Worker exiting (pid: 82614)
+[2021-03-19 17:49:37 +0000] [81254] [INFO] Handling signal: term
+[2021-03-19 17:49:37 +0000] [82618] [INFO] Worker exiting (pid: 82618)
+[2021-03-19 17:49:37 +0000] [82617] [INFO] Worker exiting (pid: 82617)
+[2021-03-19 17:49:37 +0000] [82619] [INFO] Worker exiting (pid: 82619)
+[2021-03-19 17:49:37 +0000] [82620] [INFO] Worker exiting (pid: 82620)
+[2021-03-19 17:49:37 +0000] [82621] [INFO] Worker exiting (pid: 82621)
+[2021-03-19 17:49:37 +0000] [82622] [INFO] Worker exiting (pid: 82622)
+[2021-03-19 17:49:37 +0000] [82623] [INFO] Worker exiting (pid: 82623)
+[2021-03-19 17:49:37 +0000] [82624] [INFO] Worker exiting (pid: 82624)
+[2021-03-19 17:49:37 +0000] [82625] [INFO] Worker exiting (pid: 82625)
+[2021-03-19 17:49:54 +0000] [104117] [INFO] Starting gunicorn 20.0.4
+[2021-03-19 17:49:54 +0000] [104117] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2021-03-19 17:49:54 +0000] [104117] [ERROR] Retrying in 1 second.
+[2021-03-19 17:49:55 +0000] [104117] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2021-03-19 17:49:55 +0000] [104117] [ERROR] Retrying in 1 second.
+[2021-03-19 17:49:56 +0000] [104117] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2021-03-19 17:49:56 +0000] [104117] [ERROR] Retrying in 1 second.
+[2021-03-19 17:49:57 +0000] [104117] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2021-03-19 17:49:57 +0000] [104117] [ERROR] Retrying in 1 second.
+[2021-03-19 17:49:58 +0000] [104117] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2021-03-19 17:49:58 +0000] [104117] [ERROR] Retrying in 1 second.
+[2021-03-19 17:49:59 +0000] [104117] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2021-03-19 17:50:07 +0000] [81254] [INFO] Shutting down: Master
+[2021-03-19 17:51:10 +0000] [104282] [INFO] Starting gunicorn 20.0.4
+[2021-03-19 17:51:10 +0000] [104282] [INFO] Listening at: http://0.0.0.0:8000 (104282)
+[2021-03-19 17:51:10 +0000] [104282] [INFO] Using worker: sync
+[2021-03-19 17:51:10 +0000] [104285] [INFO] Booting worker with pid: 104285
+[2021-03-19 17:51:10 +0000] [104286] [INFO] Booting worker with pid: 104286
+[2021-03-19 17:51:10 +0000] [104288] [INFO] Booting worker with pid: 104288
+[2021-03-19 17:51:10 +0000] [104291] [INFO] Booting worker with pid: 104291
+[2021-03-19 17:51:10 +0000] [104292] [INFO] Booting worker with pid: 104292
+[2021-03-19 17:51:10 +0000] [104293] [INFO] Booting worker with pid: 104293
+[2021-03-19 17:51:10 +0000] [104294] [INFO] Booting worker with pid: 104294
+[2021-03-19 17:51:10 +0000] [104295] [INFO] Booting worker with pid: 104295
+[2021-03-19 17:51:10 +0000] [104296] [INFO] Booting worker with pid: 104296
+[2021-03-19 17:51:10 +0000] [104297] [INFO] Booting worker with pid: 104297
+[2021-03-19 18:16:05,813] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/1.mp4'
+[2021-03-19 18:16:38 +0000] [104282] [INFO] Handling signal: int
+[2021-03-19 18:16:38 +0000] [104296] [INFO] Worker exiting (pid: 104296)
+[2021-03-19 18:16:38 +0000] [104297] [INFO] Worker exiting (pid: 104297)
+[2021-03-19 18:16:38 +0000] [104291] [INFO] Worker exiting (pid: 104291)
+[2021-03-19 18:16:38 +0000] [104294] [INFO] Worker exiting (pid: 104294)
+[2021-03-19 18:16:38 +0000] [104292] [INFO] Worker exiting (pid: 104292)
+[2021-03-19 18:16:38 +0000] [104288] [INFO] Worker exiting (pid: 104288)
+[2021-03-19 18:16:38 +0000] [104295] [INFO] Worker exiting (pid: 104295)
+[2021-03-19 18:16:38 +0000] [104286] [INFO] Worker exiting (pid: 104286)
+[2021-03-19 18:16:38 +0000] [104293] [INFO] Worker exiting (pid: 104293)
+[2021-03-19 18:16:38 +0000] [104285] [INFO] Worker exiting (pid: 104285)
+[2021-03-19 18:16:39 +0000] [104282] [INFO] Shutting down: Master
+[2021-03-19 18:16:42 +0000] [106627] [INFO] Starting gunicorn 20.0.4
+[2021-03-19 18:16:42 +0000] [106627] [INFO] Listening at: http://0.0.0.0:8000 (106627)
+[2021-03-19 18:16:42 +0000] [106627] [INFO] Using worker: sync
+[2021-03-19 18:16:42 +0000] [106630] [INFO] Booting worker with pid: 106630
+[2021-03-19 18:16:42 +0000] [106631] [INFO] Booting worker with pid: 106631
+[2021-03-19 18:16:42 +0000] [106632] [INFO] Booting worker with pid: 106632
+[2021-03-19 18:16:42 +0000] [106633] [INFO] Booting worker with pid: 106633
+[2021-03-19 18:16:43 +0000] [106634] [INFO] Booting worker with pid: 106634
+[2021-03-19 18:16:43 +0000] [106635] [INFO] Booting worker with pid: 106635
+[2021-03-19 18:16:43 +0000] [106636] [INFO] Booting worker with pid: 106636
+[2021-03-19 18:16:43 +0000] [106637] [INFO] Booting worker with pid: 106637
+[2021-03-19 18:16:43 +0000] [106638] [INFO] Booting worker with pid: 106638
+[2021-03-19 18:16:43 +0000] [106639] [INFO] Booting worker with pid: 106639
+[2021-03-19 18:18:06,984] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/6.mp4'
+[2021-03-19 18:18:23 +0000] [106627] [INFO] Handling signal: int
+[2021-03-19 18:18:23 +0000] [106630] [INFO] Worker exiting (pid: 106630)
+[2021-03-19 18:18:23 +0000] [106631] [INFO] Worker exiting (pid: 106631)
+[2021-03-19 18:18:23 +0000] [106632] [INFO] Worker exiting (pid: 106632)
+[2021-03-19 18:18:23 +0000] [106633] [INFO] Worker exiting (pid: 106633)
+[2021-03-19 18:18:23 +0000] [106634] [INFO] Worker exiting (pid: 106634)
+[2021-03-19 18:18:23 +0000] [106635] [INFO] Worker exiting (pid: 106635)
+[2021-03-19 18:18:23 +0000] [106636] [INFO] Worker exiting (pid: 106636)
+[2021-03-19 18:18:23 +0000] [106637] [INFO] Worker exiting (pid: 106637)
+[2021-03-19 18:18:23 +0000] [106639] [INFO] Worker exiting (pid: 106639)
+[2021-03-19 18:18:23 +0000] [106638] [INFO] Worker exiting (pid: 106638)
+[2021-03-19 18:18:24 +0000] [106627] [INFO] Shutting down: Master
+[2021-03-19 18:18:25 +0000] [106797] [INFO] Starting gunicorn 20.0.4
+[2021-03-19 18:18:25 +0000] [106797] [INFO] Listening at: http://0.0.0.0:8000 (106797)
+[2021-03-19 18:18:25 +0000] [106797] [INFO] Using worker: sync
+[2021-03-19 18:18:25 +0000] [106800] [INFO] Booting worker with pid: 106800
+[2021-03-19 18:18:26 +0000] [106801] [INFO] Booting worker with pid: 106801
+[2021-03-19 18:18:26 +0000] [106802] [INFO] Booting worker with pid: 106802
+[2021-03-19 18:18:26 +0000] [106803] [INFO] Booting worker with pid: 106803
+[2021-03-19 18:18:26 +0000] [106804] [INFO] Booting worker with pid: 106804
+[2021-03-19 18:18:26 +0000] [106805] [INFO] Booting worker with pid: 106805
+[2021-03-19 18:18:26 +0000] [106806] [INFO] Booting worker with pid: 106806
+[2021-03-19 18:18:26 +0000] [106807] [INFO] Booting worker with pid: 106807
+[2021-03-19 18:18:26 +0000] [106809] [INFO] Booting worker with pid: 106809
+[2021-03-19 18:18:26 +0000] [106808] [INFO] Booting worker with pid: 106808
+[2021-03-19 18:22:01 +0000] [106797] [INFO] Handling signal: int
+[2021-03-19 18:22:01 +0000] [106804] [INFO] Worker exiting (pid: 106804)
+[2021-03-19 18:22:01 +0000] [106801] [INFO] Worker exiting (pid: 106801)
+[2021-03-19 18:22:01 +0000] [106800] [INFO] Worker exiting (pid: 106800)
+[2021-03-19 18:22:01 +0000] [106806] [INFO] Worker exiting (pid: 106806)
+[2021-03-19 18:22:01 +0000] [106803] [INFO] Worker exiting (pid: 106803)
+[2021-03-19 18:22:01 +0000] [106805] [INFO] Worker exiting (pid: 106805)
+[2021-03-19 18:22:01 +0000] [106802] [INFO] Worker exiting (pid: 106802)
+[2021-03-19 18:22:01 +0000] [106807] [INFO] Worker exiting (pid: 106807)
+[2021-03-19 18:22:01 +0000] [106808] [INFO] Worker exiting (pid: 106808)
+[2021-03-19 18:22:01 +0000] [106809] [INFO] Worker exiting (pid: 106809)
+[2021-03-19 18:22:02 +0000] [106797] [INFO] Shutting down: Master
+[2021-03-19 18:22:06 +0000] [107150] [INFO] Starting gunicorn 20.0.4
+[2021-03-19 18:22:06 +0000] [107150] [INFO] Listening at: http://0.0.0.0:8000 (107150)
+[2021-03-19 18:22:06 +0000] [107150] [INFO] Using worker: sync
+[2021-03-19 18:22:06 +0000] [107153] [INFO] Booting worker with pid: 107153
+[2021-03-19 18:22:06 +0000] [107154] [INFO] Booting worker with pid: 107154
+[2021-03-19 18:22:06 +0000] [107155] [INFO] Booting worker with pid: 107155
+[2021-03-19 18:22:06 +0000] [107156] [INFO] Booting worker with pid: 107156
+[2021-03-19 18:22:06 +0000] [107157] [INFO] Booting worker with pid: 107157
+[2021-03-19 18:22:06 +0000] [107158] [INFO] Booting worker with pid: 107158
+[2021-03-19 18:22:06 +0000] [107159] [INFO] Booting worker with pid: 107159
+[2021-03-19 18:22:06 +0000] [107160] [INFO] Booting worker with pid: 107160
+[2021-03-19 18:22:06 +0000] [107161] [INFO] Booting worker with pid: 107161
+[2021-03-19 18:22:06 +0000] [107162] [INFO] Booting worker with pid: 107162
+[2021-03-19 18:51:50,008] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 24, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/1_1.mp4'
+[2021-03-19 18:51:52 +0000] [107150] [INFO] Handling signal: int
+[2021-03-19 18:51:52 +0000] [107153] [INFO] Worker exiting (pid: 107153)
+[2021-03-19 18:51:52 +0000] [107159] [INFO] Worker exiting (pid: 107159)
+[2021-03-19 18:51:52 +0000] [107154] [INFO] Worker exiting (pid: 107154)
+[2021-03-19 18:51:52 +0000] [107155] [INFO] Worker exiting (pid: 107155)
+[2021-03-19 18:51:52 +0000] [107160] [INFO] Worker exiting (pid: 107160)
+[2021-03-19 18:51:52 +0000] [107157] [INFO] Worker exiting (pid: 107157)
+[2021-03-19 18:51:52 +0000] [107156] [INFO] Worker exiting (pid: 107156)
+[2021-03-19 18:51:52 +0000] [107158] [INFO] Worker exiting (pid: 107158)
+[2021-03-19 18:51:52 +0000] [107161] [INFO] Worker exiting (pid: 107161)
+[2021-03-19 18:51:52 +0000] [107162] [INFO] Worker exiting (pid: 107162)
+[2021-03-19 18:51:53 +0000] [107150] [INFO] Shutting down: Master
+[2021-03-19 18:51:54 +0000] [109949] [INFO] Starting gunicorn 20.0.4
+[2021-03-19 18:51:54 +0000] [109949] [INFO] Listening at: http://0.0.0.0:8000 (109949)
+[2021-03-19 18:51:54 +0000] [109949] [INFO] Using worker: sync
+[2021-03-19 18:51:54 +0000] [109952] [INFO] Booting worker with pid: 109952
+[2021-03-19 18:51:54 +0000] [109953] [INFO] Booting worker with pid: 109953
+[2021-03-19 18:51:54 +0000] [109954] [INFO] Booting worker with pid: 109954
+[2021-03-19 18:51:54 +0000] [109955] [INFO] Booting worker with pid: 109955
+[2021-03-19 18:51:54 +0000] [109956] [INFO] Booting worker with pid: 109956
+[2021-03-19 18:51:54 +0000] [109957] [INFO] Booting worker with pid: 109957
+[2021-03-19 18:51:54 +0000] [109958] [INFO] Booting worker with pid: 109958
+[2021-03-19 18:51:55 +0000] [109959] [INFO] Booting worker with pid: 109959
+[2021-03-19 18:51:55 +0000] [109960] [INFO] Booting worker with pid: 109960
+[2021-03-19 18:51:55 +0000] [109961] [INFO] Booting worker with pid: 109961
+[2021-03-19 18:55:17 +0000] [109949] [CRITICAL] WORKER TIMEOUT (pid:109958)
+[2021-03-19 18:55:17 +0000] [109958] [INFO] Worker exiting (pid: 109958)
+[2021-03-19 18:55:17 +0000] [110275] [INFO] Booting worker with pid: 110275
+[2021-03-19 18:56:02 +0000] [109949] [CRITICAL] WORKER TIMEOUT (pid:109952)
+[2021-03-19 18:56:02 +0000] [109952] [INFO] Worker exiting (pid: 109952)
+[2021-03-19 18:56:02 +0000] [110345] [INFO] Booting worker with pid: 110345
+[2021-03-19 19:04:52 +0000] [111145] [INFO] Booting worker with pid: 111145
+[2021-03-19 19:04:52 +0000] [111146] [INFO] Booting worker with pid: 111146
+[2021-03-19 19:04:52 +0000] [111147] [INFO] Booting worker with pid: 111147
+[2021-03-19 19:04:52 +0000] [111148] [INFO] Booting worker with pid: 111148
+[2021-03-19 19:04:52 +0000] [111149] [INFO] Booting worker with pid: 111149
+[2021-03-19 19:04:52 +0000] [111150] [INFO] Booting worker with pid: 111150
+[2021-03-19 19:04:52 +0000] [111151] [INFO] Booting worker with pid: 111151
+[2021-03-19 19:04:52 +0000] [111152] [INFO] Booting worker with pid: 111152
+[2021-03-19 19:04:52 +0000] [109949] [INFO] Handling signal: hup
+[2021-03-19 19:04:52 +0000] [109949] [INFO] Hang up: Master
+[2021-03-19 19:04:52 +0000] [111153] [INFO] Booting worker with pid: 111153
+[2021-03-19 19:04:52 +0000] [111154] [INFO] Booting worker with pid: 111154
+[2021-03-19 19:04:52 +0000] [111155] [INFO] Booting worker with pid: 111155
+[2021-03-19 19:04:52 +0000] [111156] [INFO] Booting worker with pid: 111156
+[2021-03-19 19:04:52 +0000] [111158] [INFO] Booting worker with pid: 111158
+[2021-03-19 19:04:52 +0000] [111157] [INFO] Booting worker with pid: 111157
+[2021-03-19 19:04:53 +0000] [111159] [INFO] Booting worker with pid: 111159
+[2021-03-19 19:04:53 +0000] [111160] [INFO] Booting worker with pid: 111160
+[2021-03-19 19:04:53 +0000] [111161] [INFO] Booting worker with pid: 111161
+[2021-03-19 19:04:53 +0000] [111162] [INFO] Booting worker with pid: 111162
+[2021-03-19 19:04:53 +0000] [109949] [INFO] Handling signal: hup
+[2021-03-19 19:04:53 +0000] [109949] [INFO] Hang up: Master
+[2021-03-19 19:04:53 +0000] [111163] [INFO] Booting worker with pid: 111163
+[2021-03-19 19:04:53 +0000] [111164] [INFO] Booting worker with pid: 111164
+[2021-03-19 19:04:53 +0000] [111145] [INFO] Worker exiting (pid: 111145)
+[2021-03-19 19:04:53 +0000] [111165] [INFO] Booting worker with pid: 111165
+[2021-03-19 19:04:53 +0000] [111166] [INFO] Booting worker with pid: 111166
+[2021-03-19 19:04:53 +0000] [111167] [INFO] Booting worker with pid: 111167
+[2021-03-19 19:04:53 +0000] [111168] [INFO] Booting worker with pid: 111168
+[2021-03-19 19:04:53 +0000] [111169] [INFO] Booting worker with pid: 111169
+[2021-03-19 19:04:53 +0000] [111170] [INFO] Booting worker with pid: 111170
+[2021-03-19 19:04:53 +0000] [111172] [INFO] Booting worker with pid: 111172
+[2021-03-19 19:04:53 +0000] [111173] [INFO] Booting worker with pid: 111173
+[2021-03-19 19:04:54 +0000] [111146] [INFO] Worker exiting (pid: 111146)
+[2021-03-19 19:04:55 +0000] [111147] [INFO] Worker exiting (pid: 111147)
+[2021-03-19 19:04:55 +0000] [111148] [INFO] Worker exiting (pid: 111148)
+[2021-03-19 19:04:55 +0000] [111149] [INFO] Worker exiting (pid: 111149)
+[2021-03-19 19:04:55 +0000] [111150] [INFO] Worker exiting (pid: 111150)
+[2021-03-19 19:04:56 +0000] [111151] [INFO] Worker exiting (pid: 111151)
+[2021-03-19 19:04:56 +0000] [111152] [INFO] Worker exiting (pid: 111152)
+[2021-03-19 19:04:56 +0000] [111155] [INFO] Worker exiting (pid: 111155)
+[2021-03-19 19:04:56 +0000] [111153] [INFO] Worker exiting (pid: 111153)
+[2021-03-19 19:04:56 +0000] [111158] [INFO] Worker exiting (pid: 111158)
+[2021-03-19 19:04:56 +0000] [111157] [INFO] Worker exiting (pid: 111157)
+[2021-03-19 19:04:56 +0000] [111156] [INFO] Worker exiting (pid: 111156)
+[2021-03-19 19:04:56 +0000] [111154] [INFO] Worker exiting (pid: 111154)
+[2021-03-19 19:04:57 +0000] [111159] [INFO] Worker exiting (pid: 111159)
+[2021-03-19 19:04:57 +0000] [111162] [INFO] Worker exiting (pid: 111162)
+[2021-03-19 19:04:57 +0000] [111160] [INFO] Worker exiting (pid: 111160)
+[2021-03-19 19:04:57 +0000] [111161] [INFO] Worker exiting (pid: 111161)
+[2021-03-21 09:37:27,012] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-21 09:46:44 +0000] [111163] [INFO] Worker exiting (pid: 111163)
+[2021-03-21 09:46:44 +0000] [111164] [INFO] Worker exiting (pid: 111164)
+[2021-03-21 09:46:44 +0000] [111165] [INFO] Worker exiting (pid: 111165)
+[2021-03-21 09:46:44 +0000] [111166] [INFO] Worker exiting (pid: 111166)
+[2021-03-21 09:46:44 +0000] [111167] [INFO] Worker exiting (pid: 111167)
+[2021-03-21 09:46:44 +0000] [111168] [INFO] Worker exiting (pid: 111168)
+[2021-03-21 09:46:44 +0000] [111169] [INFO] Worker exiting (pid: 111169)
+[2021-03-21 09:46:44 +0000] [111170] [INFO] Worker exiting (pid: 111170)
+[2021-03-21 09:46:44 +0000] [109949] [INFO] Handling signal: term
+[2021-03-21 09:46:44 +0000] [111172] [INFO] Worker exiting (pid: 111172)
+[2021-03-21 09:46:44 +0000] [111173] [INFO] Worker exiting (pid: 111173)
+[2021-03-21 09:46:44 +0000] [109949] [INFO] Shutting down: Master
+[2021-03-21 09:47:02 +0000] [128294] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 09:47:02 +0000] [128294] [INFO] Listening at: http://0.0.0.0:8000 (128294)
+[2021-03-21 09:47:02 +0000] [128294] [INFO] Using worker: sync
+[2021-03-21 09:47:02 +0000] [128298] [INFO] Booting worker with pid: 128298
+[2021-03-21 09:47:02 +0000] [128299] [INFO] Booting worker with pid: 128299
+[2021-03-21 09:47:02 +0000] [128300] [INFO] Booting worker with pid: 128300
+[2021-03-21 09:47:02 +0000] [128301] [INFO] Booting worker with pid: 128301
+[2021-03-21 09:47:03 +0000] [128302] [INFO] Booting worker with pid: 128302
+[2021-03-21 09:47:03 +0000] [128304] [INFO] Booting worker with pid: 128304
+[2021-03-21 09:47:03 +0000] [128303] [INFO] Booting worker with pid: 128303
+[2021-03-21 09:47:03 +0000] [128305] [INFO] Booting worker with pid: 128305
+[2021-03-21 09:47:03 +0000] [128306] [INFO] Booting worker with pid: 128306
+[2021-03-21 09:47:03 +0000] [128307] [INFO] Booting worker with pid: 128307
+[2021-03-21 09:49:13 +0000] [128294] [INFO] Handling signal: int
+[2021-03-21 09:49:13 +0000] [128300] [INFO] Worker exiting (pid: 128300)
+[2021-03-21 09:49:13 +0000] [128304] [INFO] Worker exiting (pid: 128304)
+[2021-03-21 09:49:13 +0000] [128301] [INFO] Worker exiting (pid: 128301)
+[2021-03-21 09:49:13 +0000] [128305] [INFO] Worker exiting (pid: 128305)
+[2021-03-21 09:49:13 +0000] [128302] [INFO] Worker exiting (pid: 128302)
+[2021-03-21 09:49:13 +0000] [128306] [INFO] Worker exiting (pid: 128306)
+[2021-03-21 09:49:13 +0000] [128303] [INFO] Worker exiting (pid: 128303)
+[2021-03-21 09:49:13 +0000] [128299] [INFO] Worker exiting (pid: 128299)
+[2021-03-21 09:49:13 +0000] [128298] [INFO] Worker exiting (pid: 128298)
+[2021-03-21 09:49:13 +0000] [128307] [INFO] Worker exiting (pid: 128307)
+[2021-03-21 09:49:14 +0000] [128294] [INFO] Shutting down: Master
+[2021-03-21 09:49:16 +0000] [128626] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 09:49:16 +0000] [128626] [INFO] Listening at: http://0.0.0.0:8000 (128626)
+[2021-03-21 09:49:16 +0000] [128626] [INFO] Using worker: sync
+[2021-03-21 09:49:16 +0000] [128629] [INFO] Booting worker with pid: 128629
+[2021-03-21 09:49:16 +0000] [128630] [INFO] Booting worker with pid: 128630
+[2021-03-21 09:49:16 +0000] [128631] [INFO] Booting worker with pid: 128631
+[2021-03-21 09:49:16 +0000] [128632] [INFO] Booting worker with pid: 128632
+[2021-03-21 09:49:16 +0000] [128633] [INFO] Booting worker with pid: 128633
+[2021-03-21 09:49:16 +0000] [128635] [INFO] Booting worker with pid: 128635
+[2021-03-21 09:49:16 +0000] [128634] [INFO] Booting worker with pid: 128634
+[2021-03-21 09:49:16 +0000] [128636] [INFO] Booting worker with pid: 128636
+[2021-03-21 09:49:16 +0000] [128637] [INFO] Booting worker with pid: 128637
+[2021-03-21 09:49:16 +0000] [128638] [INFO] Booting worker with pid: 128638
+[2021-03-21 09:59:15 +0000] [128626] [INFO] Handling signal: int
+[2021-03-21 09:59:15 +0000] [128629] [INFO] Worker exiting (pid: 128629)
+[2021-03-21 09:59:15 +0000] [128630] [INFO] Worker exiting (pid: 128630)
+[2021-03-21 09:59:15 +0000] [128633] [INFO] Worker exiting (pid: 128633)
+[2021-03-21 09:59:15 +0000] [128631] [INFO] Worker exiting (pid: 128631)
+[2021-03-21 09:59:15 +0000] [128632] [INFO] Worker exiting (pid: 128632)
+[2021-03-21 09:59:15 +0000] [128635] [INFO] Worker exiting (pid: 128635)
+[2021-03-21 09:59:15 +0000] [128634] [INFO] Worker exiting (pid: 128634)
+[2021-03-21 09:59:15 +0000] [128636] [INFO] Worker exiting (pid: 128636)
+[2021-03-21 09:59:15 +0000] [128637] [INFO] Worker exiting (pid: 128637)
+[2021-03-21 09:59:15 +0000] [128638] [INFO] Worker exiting (pid: 128638)
+[2021-03-21 09:59:15 +0000] [128626] [INFO] Shutting down: Master
+[2021-03-21 09:59:17 +0000] [128812] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 09:59:17 +0000] [128812] [INFO] Listening at: http://0.0.0.0:8000 (128812)
+[2021-03-21 09:59:17 +0000] [128812] [INFO] Using worker: sync
+[2021-03-21 09:59:17 +0000] [128815] [INFO] Booting worker with pid: 128815
+[2021-03-21 09:59:17 +0000] [128816] [INFO] Booting worker with pid: 128816
+[2021-03-21 09:59:17 +0000] [128817] [INFO] Booting worker with pid: 128817
+[2021-03-21 09:59:17 +0000] [128818] [INFO] Booting worker with pid: 128818
+[2021-03-21 09:59:17 +0000] [128819] [INFO] Booting worker with pid: 128819
+[2021-03-21 09:59:17 +0000] [128820] [INFO] Booting worker with pid: 128820
+[2021-03-21 09:59:17 +0000] [128821] [INFO] Booting worker with pid: 128821
+[2021-03-21 09:59:17 +0000] [128822] [INFO] Booting worker with pid: 128822
+[2021-03-21 09:59:17 +0000] [128823] [INFO] Booting worker with pid: 128823
+[2021-03-21 09:59:17 +0000] [128824] [INFO] Booting worker with pid: 128824
+[2021-03-21 10:06:43 +0000] [128812] [INFO] Handling signal: int
+[2021-03-21 10:06:43 +0000] [128815] [INFO] Worker exiting (pid: 128815)
+[2021-03-21 10:06:43 +0000] [128816] [INFO] Worker exiting (pid: 128816)
+[2021-03-21 10:06:43 +0000] [128817] [INFO] Worker exiting (pid: 128817)
+[2021-03-21 10:06:43 +0000] [128818] [INFO] Worker exiting (pid: 128818)
+[2021-03-21 10:06:43 +0000] [128819] [INFO] Worker exiting (pid: 128819)
+[2021-03-21 10:06:43 +0000] [128820] [INFO] Worker exiting (pid: 128820)
+[2021-03-21 10:06:43 +0000] [128821] [INFO] Worker exiting (pid: 128821)
+[2021-03-21 10:06:43 +0000] [128823] [INFO] Worker exiting (pid: 128823)
+[2021-03-21 10:06:43 +0000] [128824] [INFO] Worker exiting (pid: 128824)
+[2021-03-21 10:06:43 +0000] [128822] [INFO] Worker exiting (pid: 128822)
+[2021-03-21 10:06:43 +0000] [128812] [INFO] Shutting down: Master
+[2021-03-21 10:09:23 +0000] [129615] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 10:09:23 +0000] [129615] [INFO] Listening at: http://0.0.0.0:8000 (129615)
+[2021-03-21 10:09:23 +0000] [129615] [INFO] Using worker: sync
+[2021-03-21 10:09:23 +0000] [129618] [INFO] Booting worker with pid: 129618
+[2021-03-21 10:09:23 +0000] [129619] [INFO] Booting worker with pid: 129619
+[2021-03-21 10:09:24 +0000] [129620] [INFO] Booting worker with pid: 129620
+[2021-03-21 10:09:24 +0000] [129621] [INFO] Booting worker with pid: 129621
+[2021-03-21 10:09:24 +0000] [129623] [INFO] Booting worker with pid: 129623
+[2021-03-21 10:09:24 +0000] [129622] [INFO] Booting worker with pid: 129622
+[2021-03-21 10:09:24 +0000] [129624] [INFO] Booting worker with pid: 129624
+[2021-03-21 10:09:24 +0000] [129625] [INFO] Booting worker with pid: 129625
+[2021-03-21 10:09:24 +0000] [129626] [INFO] Booting worker with pid: 129626
+[2021-03-21 10:09:24 +0000] [129627] [INFO] Booting worker with pid: 129627
+[2021-03-21 10:11:08 +0000] [129615] [INFO] Handling signal: int
+[2021-03-21 10:11:09 +0000] [129619] [INFO] Worker exiting (pid: 129619)
+[2021-03-21 10:11:09 +0000] [129625] [INFO] Worker exiting (pid: 129625)
+[2021-03-21 10:11:09 +0000] [129624] [INFO] Worker exiting (pid: 129624)
+[2021-03-21 10:11:09 +0000] [129623] [INFO] Worker exiting (pid: 129623)
+[2021-03-21 10:11:09 +0000] [129618] [INFO] Worker exiting (pid: 129618)
+[2021-03-21 10:11:09 +0000] [129620] [INFO] Worker exiting (pid: 129620)
+[2021-03-21 10:11:09 +0000] [129622] [INFO] Worker exiting (pid: 129622)
+[2021-03-21 10:11:09 +0000] [129626] [INFO] Worker exiting (pid: 129626)
+[2021-03-21 10:11:09 +0000] [129621] [INFO] Worker exiting (pid: 129621)
+[2021-03-21 10:11:09 +0000] [129627] [INFO] Worker exiting (pid: 129627)
+[2021-03-21 10:11:09 +0000] [129615] [INFO] Shutting down: Master
+[2021-03-21 10:11:12 +0000] [129811] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 10:11:12 +0000] [129811] [INFO] Listening at: http://0.0.0.0:8000 (129811)
+[2021-03-21 10:11:12 +0000] [129811] [INFO] Using worker: sync
+[2021-03-21 10:11:12 +0000] [129814] [INFO] Booting worker with pid: 129814
+[2021-03-21 10:11:12 +0000] [129815] [INFO] Booting worker with pid: 129815
+[2021-03-21 10:11:12 +0000] [129816] [INFO] Booting worker with pid: 129816
+[2021-03-21 10:11:12 +0000] [129817] [INFO] Booting worker with pid: 129817
+[2021-03-21 10:11:12 +0000] [129818] [INFO] Booting worker with pid: 129818
+[2021-03-21 10:11:12 +0000] [129819] [INFO] Booting worker with pid: 129819
+[2021-03-21 10:11:12 +0000] [129820] [INFO] Booting worker with pid: 129820
+[2021-03-21 10:11:12 +0000] [129821] [INFO] Booting worker with pid: 129821
+[2021-03-21 10:11:12 +0000] [129822] [INFO] Booting worker with pid: 129822
+[2021-03-21 10:11:12 +0000] [129823] [INFO] Booting worker with pid: 129823
+[2021-03-21 10:13:44 +0000] [129811] [INFO] Handling signal: int
+[2021-03-21 10:13:44 +0000] [129818] [INFO] Worker exiting (pid: 129818)
+[2021-03-21 10:13:44 +0000] [129816] [INFO] Worker exiting (pid: 129816)
+[2021-03-21 10:13:44 +0000] [129815] [INFO] Worker exiting (pid: 129815)
+[2021-03-21 10:13:44 +0000] [129814] [INFO] Worker exiting (pid: 129814)
+[2021-03-21 10:13:44 +0000] [129819] [INFO] Worker exiting (pid: 129819)
+[2021-03-21 10:13:44 +0000] [129821] [INFO] Worker exiting (pid: 129821)
+[2021-03-21 10:13:44 +0000] [129817] [INFO] Worker exiting (pid: 129817)
+[2021-03-21 10:13:44 +0000] [129820] [INFO] Worker exiting (pid: 129820)
+[2021-03-21 10:13:44 +0000] [129822] [INFO] Worker exiting (pid: 129822)
+[2021-03-21 10:13:44 +0000] [129823] [INFO] Worker exiting (pid: 129823)
+[2021-03-21 10:13:45 +0000] [129811] [INFO] Shutting down: Master
+[2021-03-21 10:13:46 +0000] [130058] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 10:13:46 +0000] [130058] [INFO] Listening at: http://0.0.0.0:8000 (130058)
+[2021-03-21 10:13:46 +0000] [130058] [INFO] Using worker: sync
+[2021-03-21 10:13:46 +0000] [130061] [INFO] Booting worker with pid: 130061
+[2021-03-21 10:13:46 +0000] [130062] [INFO] Booting worker with pid: 130062
+[2021-03-21 10:13:46 +0000] [130063] [INFO] Booting worker with pid: 130063
+[2021-03-21 10:13:46 +0000] [130064] [INFO] Booting worker with pid: 130064
+[2021-03-21 10:13:46 +0000] [130065] [INFO] Booting worker with pid: 130065
+[2021-03-21 10:13:46 +0000] [130066] [INFO] Booting worker with pid: 130066
+[2021-03-21 10:13:46 +0000] [130067] [INFO] Booting worker with pid: 130067
+[2021-03-21 10:13:46 +0000] [130068] [INFO] Booting worker with pid: 130068
+[2021-03-21 10:13:46 +0000] [130069] [INFO] Booting worker with pid: 130069
+[2021-03-21 10:13:46 +0000] [130070] [INFO] Booting worker with pid: 130070
+[2021-03-21 12:29:20 +0000] [131864] [INFO] Booting worker with pid: 131864
+[2021-03-21 12:29:20 +0000] [131865] [INFO] Booting worker with pid: 131865
+[2021-03-21 12:29:20 +0000] [131866] [INFO] Booting worker with pid: 131866
+[2021-03-21 12:29:20 +0000] [131867] [INFO] Booting worker with pid: 131867
+[2021-03-21 12:29:20 +0000] [131868] [INFO] Booting worker with pid: 131868
+[2021-03-21 12:29:20 +0000] [131869] [INFO] Booting worker with pid: 131869
+[2021-03-21 12:29:20 +0000] [131870] [INFO] Booting worker with pid: 131870
+[2021-03-21 12:29:20 +0000] [131871] [INFO] Booting worker with pid: 131871
+[2021-03-21 12:29:20 +0000] [131872] [INFO] Booting worker with pid: 131872
+[2021-03-21 12:29:20 +0000] [130058] [INFO] Handling signal: hup
+[2021-03-21 12:29:20 +0000] [130058] [INFO] Hang up: Master
+[2021-03-21 12:29:20 +0000] [131873] [INFO] Booting worker with pid: 131873
+[2021-03-21 12:29:20 +0000] [131874] [INFO] Booting worker with pid: 131874
+[2021-03-21 12:29:20 +0000] [131875] [INFO] Booting worker with pid: 131875
+[2021-03-21 12:29:20 +0000] [131876] [INFO] Booting worker with pid: 131876
+[2021-03-21 12:29:20 +0000] [131877] [INFO] Booting worker with pid: 131877
+[2021-03-21 12:29:20 +0000] [131878] [INFO] Booting worker with pid: 131878
+[2021-03-21 12:29:20 +0000] [131879] [INFO] Booting worker with pid: 131879
+[2021-03-21 12:29:21 +0000] [131880] [INFO] Booting worker with pid: 131880
+[2021-03-21 12:29:21 +0000] [131881] [INFO] Booting worker with pid: 131881
+[2021-03-21 12:29:21 +0000] [131882] [INFO] Booting worker with pid: 131882
+[2021-03-21 12:29:21 +0000] [131883] [INFO] Booting worker with pid: 131883
+[2021-03-21 12:29:21 +0000] [130058] [INFO] Handling signal: hup
+[2021-03-21 12:29:21 +0000] [130058] [INFO] Hang up: Master
+[2021-03-21 12:29:21 +0000] [131884] [INFO] Booting worker with pid: 131884
+[2021-03-21 12:29:21 +0000] [131885] [INFO] Booting worker with pid: 131885
+[2021-03-21 12:29:21 +0000] [131886] [INFO] Booting worker with pid: 131886
+[2021-03-21 12:29:21 +0000] [131887] [INFO] Booting worker with pid: 131887
+[2021-03-21 12:29:21 +0000] [131888] [INFO] Booting worker with pid: 131888
+[2021-03-21 12:29:21 +0000] [131890] [INFO] Booting worker with pid: 131890
+[2021-03-21 12:29:21 +0000] [131889] [INFO] Booting worker with pid: 131889
+[2021-03-21 12:29:21 +0000] [131891] [INFO] Booting worker with pid: 131891
+[2021-03-21 12:29:21 +0000] [131892] [INFO] Booting worker with pid: 131892
+[2021-03-21 12:29:21 +0000] [131893] [INFO] Booting worker with pid: 131893
+[2021-03-21 12:29:22 +0000] [131864] [INFO] Worker exiting (pid: 131864)
+[2021-03-21 12:29:22 +0000] [131865] [INFO] Worker exiting (pid: 131865)
+[2021-03-21 12:29:22 +0000] [131866] [INFO] Worker exiting (pid: 131866)
+[2021-03-21 12:29:22 +0000] [131867] [INFO] Worker exiting (pid: 131867)
+[2021-03-21 12:29:23 +0000] [131868] [INFO] Worker exiting (pid: 131868)
+[2021-03-21 12:29:23 +0000] [131869] [INFO] Worker exiting (pid: 131869)
+[2021-03-21 12:29:24 +0000] [131870] [INFO] Worker exiting (pid: 131870)
+[2021-03-21 12:29:24 +0000] [131871] [INFO] Worker exiting (pid: 131871)
+[2021-03-21 12:29:24 +0000] [131873] [INFO] Worker exiting (pid: 131873)
+[2021-03-21 12:29:24 +0000] [131872] [INFO] Worker exiting (pid: 131872)
+[2021-03-21 12:29:25 +0000] [131874] [INFO] Worker exiting (pid: 131874)
+[2021-03-21 12:29:25 +0000] [131876] [INFO] Worker exiting (pid: 131876)
+[2021-03-21 12:29:25 +0000] [131875] [INFO] Worker exiting (pid: 131875)
+[2021-03-21 12:29:25 +0000] [131879] [INFO] Worker exiting (pid: 131879)
+[2021-03-21 12:29:25 +0000] [131878] [INFO] Worker exiting (pid: 131878)
+[2021-03-21 12:29:25 +0000] [131877] [INFO] Worker exiting (pid: 131877)
+[2021-03-21 12:29:25 +0000] [131881] [INFO] Worker exiting (pid: 131881)
+[2021-03-21 12:29:25 +0000] [131883] [INFO] Worker exiting (pid: 131883)
+[2021-03-21 12:29:25 +0000] [131880] [INFO] Worker exiting (pid: 131880)
+[2021-03-21 12:29:25 +0000] [131882] [INFO] Worker exiting (pid: 131882)
+[2021-03-21 17:45:33,782] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-21 17:52:53,524] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-21 17:53:35 +0000] [130058] [INFO] Handling signal: term
+[2021-03-21 17:53:35 +0000] [131885] [INFO] Worker exiting (pid: 131885)
+[2021-03-21 17:53:36 +0000] [131886] [INFO] Worker exiting (pid: 131886)
+[2021-03-21 17:53:36 +0000] [131887] [INFO] Worker exiting (pid: 131887)
+[2021-03-21 17:53:36 +0000] [131888] [INFO] Worker exiting (pid: 131888)
+[2021-03-21 17:53:36 +0000] [131889] [INFO] Worker exiting (pid: 131889)
+[2021-03-21 17:53:36 +0000] [131890] [INFO] Worker exiting (pid: 131890)
+[2021-03-21 17:53:36 +0000] [131891] [INFO] Worker exiting (pid: 131891)
+[2021-03-21 17:53:36 +0000] [131892] [INFO] Worker exiting (pid: 131892)
+[2021-03-21 17:53:36 +0000] [131893] [INFO] Worker exiting (pid: 131893)
+[2021-03-21 17:53:35 +0000] [131884] [INFO] Worker exiting (pid: 131884)
+[2021-03-21 17:53:36 +0000] [130058] [INFO] Shutting down: Master
+[2021-03-21 17:53:41 +0000] [133601] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 17:53:41 +0000] [133601] [INFO] Listening at: http://0.0.0.0:8000 (133601)
+[2021-03-21 17:53:41 +0000] [133601] [INFO] Using worker: sync
+[2021-03-21 17:53:41 +0000] [133605] [INFO] Booting worker with pid: 133605
+[2021-03-21 17:53:41 +0000] [133606] [INFO] Booting worker with pid: 133606
+[2021-03-21 17:53:41 +0000] [133607] [INFO] Booting worker with pid: 133607
+[2021-03-21 17:53:41 +0000] [133608] [INFO] Booting worker with pid: 133608
+[2021-03-21 17:53:41 +0000] [133609] [INFO] Booting worker with pid: 133609
+[2021-03-21 17:53:41 +0000] [133610] [INFO] Booting worker with pid: 133610
+[2021-03-21 17:53:41 +0000] [133611] [INFO] Booting worker with pid: 133611
+[2021-03-21 17:53:41 +0000] [133612] [INFO] Booting worker with pid: 133612
+[2021-03-21 17:53:41 +0000] [133613] [INFO] Booting worker with pid: 133613
+[2021-03-21 17:53:41 +0000] [133614] [INFO] Booting worker with pid: 133614
+[2021-03-21 17:55:05 +0000] [133601] [INFO] Handling signal: int
+[2021-03-21 17:55:05 +0000] [133608] [INFO] Worker exiting (pid: 133608)
+[2021-03-21 17:55:05 +0000] [133610] [INFO] Worker exiting (pid: 133610)
+[2021-03-21 17:55:05 +0000] [133609] [INFO] Worker exiting (pid: 133609)
+[2021-03-21 17:55:05 +0000] [133611] [INFO] Worker exiting (pid: 133611)
+[2021-03-21 17:55:05 +0000] [133613] [INFO] Worker exiting (pid: 133613)
+[2021-03-21 17:55:05 +0000] [133607] [INFO] Worker exiting (pid: 133607)
+[2021-03-21 17:55:05 +0000] [133606] [INFO] Worker exiting (pid: 133606)
+[2021-03-21 17:55:05 +0000] [133605] [INFO] Worker exiting (pid: 133605)
+[2021-03-21 17:55:05 +0000] [133614] [INFO] Worker exiting (pid: 133614)
+[2021-03-21 17:55:06 +0000] [133612] [INFO] Worker exiting (pid: 133612)
+[2021-03-21 17:55:06 +0000] [133601] [INFO] Shutting down: Master
+[2021-03-21 17:56:26 +0000] [133680] [INFO] Starting gunicorn 20.0.4
+[2021-03-21 17:56:26 +0000] [133680] [INFO] Listening at: http://0.0.0.0:8000 (133680)
+[2021-03-21 17:56:26 +0000] [133680] [INFO] Using worker: sync
+[2021-03-21 17:56:26 +0000] [133683] [INFO] Booting worker with pid: 133683
+[2021-03-21 17:56:27 +0000] [133684] [INFO] Booting worker with pid: 133684
+[2021-03-21 17:56:27 +0000] [133685] [INFO] Booting worker with pid: 133685
+[2021-03-21 17:56:27 +0000] [133686] [INFO] Booting worker with pid: 133686
+[2021-03-21 17:56:27 +0000] [133687] [INFO] Booting worker with pid: 133687
+[2021-03-21 17:56:27 +0000] [133688] [INFO] Booting worker with pid: 133688
+[2021-03-21 17:56:27 +0000] [133689] [INFO] Booting worker with pid: 133689
+[2021-03-21 17:56:27 +0000] [133690] [INFO] Booting worker with pid: 133690
+[2021-03-21 17:56:27 +0000] [133691] [INFO] Booting worker with pid: 133691
+[2021-03-21 17:56:27 +0000] [133692] [INFO] Booting worker with pid: 133692
+[2021-03-21 18:01:54 +0000] [133725] [INFO] Booting worker with pid: 133725
+[2021-03-21 18:01:54 +0000] [133726] [INFO] Booting worker with pid: 133726
+[2021-03-21 18:01:54 +0000] [133680] [INFO] Handling signal: hup
+[2021-03-21 18:01:54 +0000] [133680] [INFO] Hang up: Master
+[2021-03-21 18:01:54 +0000] [133728] [INFO] Booting worker with pid: 133728
+[2021-03-21 18:01:54 +0000] [133727] [INFO] Booting worker with pid: 133727
+[2021-03-21 18:01:54 +0000] [133729] [INFO] Booting worker with pid: 133729
+[2021-03-21 18:01:54 +0000] [133730] [INFO] Booting worker with pid: 133730
+[2021-03-21 18:01:54 +0000] [133731] [INFO] Booting worker with pid: 133731
+[2021-03-21 18:01:54 +0000] [133732] [INFO] Booting worker with pid: 133732
+[2021-03-21 18:01:54 +0000] [133733] [INFO] Booting worker with pid: 133733
+[2021-03-21 18:01:54 +0000] [133734] [INFO] Booting worker with pid: 133734
+[2021-03-21 18:01:54 +0000] [133736] [INFO] Booting worker with pid: 133736
+[2021-03-21 18:01:54 +0000] [133735] [INFO] Booting worker with pid: 133735
+[2021-03-21 18:01:55 +0000] [133725] [INFO] Worker exiting (pid: 133725)
+[2021-03-21 18:01:55 +0000] [133726] [INFO] Worker exiting (pid: 133726)
+[2021-03-22 08:26:30 +0000] [133727] [INFO] Worker exiting (pid: 133727)
+[2021-03-22 08:26:30 +0000] [133728] [INFO] Worker exiting (pid: 133728)
+[2021-03-22 08:26:30 +0000] [133680] [INFO] Handling signal: term
+[2021-03-22 08:26:30 +0000] [133733] [INFO] Worker exiting (pid: 133733)
+[2021-03-22 08:26:30 +0000] [133729] [INFO] Worker exiting (pid: 133729)
+[2021-03-22 08:26:30 +0000] [133731] [INFO] Worker exiting (pid: 133731)
+[2021-03-22 08:26:30 +0000] [133732] [INFO] Worker exiting (pid: 133732)
+[2021-03-22 08:26:30 +0000] [133734] [INFO] Worker exiting (pid: 133734)
+[2021-03-22 08:26:30 +0000] [133735] [INFO] Worker exiting (pid: 133735)
+[2021-03-22 08:26:30 +0000] [133736] [INFO] Worker exiting (pid: 133736)
+[2021-03-22 08:26:30 +0000] [133730] [INFO] Worker exiting (pid: 133730)
+[2021-03-22 08:26:30 +0000] [133680] [INFO] Shutting down: Master
+[2021-03-22 08:26:34 +0000] [140476] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 08:26:34 +0000] [140476] [INFO] Listening at: http://0.0.0.0:8000 (140476)
+[2021-03-22 08:26:34 +0000] [140476] [INFO] Using worker: sync
+[2021-03-22 08:26:34 +0000] [140482] [INFO] Booting worker with pid: 140482
+[2021-03-22 08:26:34 +0000] [140483] [INFO] Booting worker with pid: 140483
+[2021-03-22 08:26:34 +0000] [140484] [INFO] Booting worker with pid: 140484
+[2021-03-22 08:26:34 +0000] [140485] [INFO] Booting worker with pid: 140485
+[2021-03-22 08:26:34 +0000] [140486] [INFO] Booting worker with pid: 140486
+[2021-03-22 08:26:34 +0000] [140487] [INFO] Booting worker with pid: 140487
+[2021-03-22 08:26:34 +0000] [140488] [INFO] Booting worker with pid: 140488
+[2021-03-22 08:26:34 +0000] [140489] [INFO] Booting worker with pid: 140489
+[2021-03-22 08:26:34 +0000] [140490] [INFO] Booting worker with pid: 140490
+[2021-03-22 08:26:34 +0000] [140491] [INFO] Booting worker with pid: 140491
+[2021-03-22 10:39:42 +0000] [150045] [INFO] Booting worker with pid: 150045
+[2021-03-22 10:39:42 +0000] [150046] [INFO] Booting worker with pid: 150046
+[2021-03-22 10:39:42 +0000] [150047] [INFO] Booting worker with pid: 150047
+[2021-03-22 10:39:42 +0000] [150048] [INFO] Booting worker with pid: 150048
+[2021-03-22 10:39:42 +0000] [150049] [INFO] Booting worker with pid: 150049
+[2021-03-22 10:39:43 +0000] [150050] [INFO] Booting worker with pid: 150050
+[2021-03-22 10:39:43 +0000] [150051] [INFO] Booting worker with pid: 150051
+[2021-03-22 10:39:43 +0000] [150052] [INFO] Booting worker with pid: 150052
+[2021-03-22 10:39:43 +0000] [150053] [INFO] Booting worker with pid: 150053
+[2021-03-22 10:39:43 +0000] [150054] [INFO] Booting worker with pid: 150054
+[2021-03-22 10:39:43 +0000] [140476] [INFO] Handling signal: hup
+[2021-03-22 10:39:43 +0000] [140476] [INFO] Hang up: Master
+[2021-03-22 10:39:43 +0000] [150055] [INFO] Booting worker with pid: 150055
+[2021-03-22 10:39:43 +0000] [150056] [INFO] Booting worker with pid: 150056
+[2021-03-22 10:39:43 +0000] [150057] [INFO] Booting worker with pid: 150057
+[2021-03-22 10:39:43 +0000] [150058] [INFO] Booting worker with pid: 150058
+[2021-03-22 10:39:43 +0000] [150059] [INFO] Booting worker with pid: 150059
+[2021-03-22 10:39:43 +0000] [150060] [INFO] Booting worker with pid: 150060
+[2021-03-22 10:39:43 +0000] [150061] [INFO] Booting worker with pid: 150061
+[2021-03-22 10:39:43 +0000] [150062] [INFO] Booting worker with pid: 150062
+[2021-03-22 10:39:43 +0000] [150064] [INFO] Booting worker with pid: 150064
+[2021-03-22 10:39:43 +0000] [150063] [INFO] Booting worker with pid: 150063
+[2021-03-22 10:39:45 +0000] [150050] [INFO] Worker exiting (pid: 150050)
+[2021-03-22 10:39:45 +0000] [150046] [INFO] Worker exiting (pid: 150046)
+[2021-03-22 10:39:45 +0000] [150047] [INFO] Worker exiting (pid: 150047)
+[2021-03-22 10:39:45 +0000] [150048] [INFO] Worker exiting (pid: 150048)
+[2021-03-22 10:39:45 +0000] [150049] [INFO] Worker exiting (pid: 150049)
+[2021-03-22 10:39:45 +0000] [150045] [INFO] Worker exiting (pid: 150045)
+[2021-03-22 10:39:45 +0000] [150051] [INFO] Worker exiting (pid: 150051)
+[2021-03-22 10:39:45 +0000] [150052] [INFO] Worker exiting (pid: 150052)
+[2021-03-22 10:39:46 +0000] [150053] [INFO] Worker exiting (pid: 150053)
+[2021-03-22 10:39:46 +0000] [150054] [INFO] Worker exiting (pid: 150054)
+[2021-03-22 13:23:37,160] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:24:56,151] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:25:37,451] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:31:46,883] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:36:15,014] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:38:01,461] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:40:21,336] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 13:53:41,417] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:08:04,770] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:12:04,707] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:18:13,796] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:34:12,250] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:35:30,643] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:36:24,343] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:38:28,970] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:51:33,030] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:52:27,879] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 14:57:31,694] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 62, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-22 15:13:16 +0000] [150064] [INFO] Worker exiting (pid: 150064)
+[2021-03-22 15:13:16 +0000] [150060] [INFO] Worker exiting (pid: 150060)
+[2021-03-22 15:13:16 +0000] [150062] [INFO] Worker exiting (pid: 150062)
+[2021-03-22 15:13:16 +0000] [150059] [INFO] Worker exiting (pid: 150059)
+[2021-03-22 15:13:16 +0000] [150058] [INFO] Worker exiting (pid: 150058)
+[2021-03-22 15:13:16 +0000] [150061] [INFO] Worker exiting (pid: 150061)
+[2021-03-22 15:13:16 +0000] [150063] [INFO] Worker exiting (pid: 150063)
+[2021-03-22 15:13:16 +0000] [150056] [INFO] Worker exiting (pid: 150056)
+[2021-03-22 15:13:16 +0000] [150057] [INFO] Worker exiting (pid: 150057)
+[2021-03-22 15:13:16 +0000] [150055] [INFO] Worker exiting (pid: 150055)
+[2021-03-22 15:13:16 +0000] [140476] [INFO] Handling signal: term
+[2021-03-22 15:13:16 +0000] [140476] [INFO] Shutting down: Master
+[2021-03-22 15:13:22 +0000] [151212] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 15:13:22 +0000] [151212] [INFO] Listening at: http://0.0.0.0:8000 (151212)
+[2021-03-22 15:13:22 +0000] [151212] [INFO] Using worker: sync
+[2021-03-22 15:13:22 +0000] [151216] [INFO] Booting worker with pid: 151216
+[2021-03-22 15:13:22 +0000] [151217] [INFO] Booting worker with pid: 151217
+[2021-03-22 15:13:22 +0000] [151218] [INFO] Booting worker with pid: 151218
+[2021-03-22 15:13:22 +0000] [151219] [INFO] Booting worker with pid: 151219
+[2021-03-22 15:13:22 +0000] [151220] [INFO] Booting worker with pid: 151220
+[2021-03-22 15:13:22 +0000] [151221] [INFO] Booting worker with pid: 151221
+[2021-03-22 15:13:22 +0000] [151222] [INFO] Booting worker with pid: 151222
+[2021-03-22 15:13:22 +0000] [151223] [INFO] Booting worker with pid: 151223
+[2021-03-22 15:13:22 +0000] [151224] [INFO] Booting worker with pid: 151224
+[2021-03-22 15:13:22 +0000] [151225] [INFO] Booting worker with pid: 151225
+[2021-03-22 15:17:01 +0000] [151212] [INFO] Handling signal: int
+[2021-03-22 15:17:01 +0000] [151217] [INFO] Worker exiting (pid: 151217)
+[2021-03-22 15:17:01 +0000] [151218] [INFO] Worker exiting (pid: 151218)
+[2021-03-22 15:17:01 +0000] [151225] [INFO] Worker exiting (pid: 151225)
+[2021-03-22 15:17:01 +0000] [151221] [INFO] Worker exiting (pid: 151221)
+[2021-03-22 15:17:01 +0000] [151223] [INFO] Worker exiting (pid: 151223)
+[2021-03-22 15:17:01 +0000] [151224] [INFO] Worker exiting (pid: 151224)
+[2021-03-22 15:17:01 +0000] [151222] [INFO] Worker exiting (pid: 151222)
+[2021-03-22 15:17:01 +0000] [151219] [INFO] Worker exiting (pid: 151219)
+[2021-03-22 15:17:01 +0000] [151216] [INFO] Worker exiting (pid: 151216)
+[2021-03-22 15:17:01 +0000] [151220] [INFO] Worker exiting (pid: 151220)
+[2021-03-22 15:17:02 +0000] [151212] [INFO] Shutting down: Master
+[2021-03-22 15:17:09 +0000] [151542] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 15:17:09 +0000] [151542] [INFO] Listening at: http://0.0.0.0:8000 (151542)
+[2021-03-22 15:17:09 +0000] [151542] [INFO] Using worker: sync
+[2021-03-22 15:17:09 +0000] [151545] [INFO] Booting worker with pid: 151545
+[2021-03-22 15:17:09 +0000] [151546] [INFO] Booting worker with pid: 151546
+[2021-03-22 15:17:09 +0000] [151547] [INFO] Booting worker with pid: 151547
+[2021-03-22 15:17:09 +0000] [151548] [INFO] Booting worker with pid: 151548
+[2021-03-22 15:17:09 +0000] [151549] [INFO] Booting worker with pid: 151549
+[2021-03-22 15:17:10 +0000] [151550] [INFO] Booting worker with pid: 151550
+[2021-03-22 15:17:10 +0000] [151551] [INFO] Booting worker with pid: 151551
+[2021-03-22 15:17:10 +0000] [151552] [INFO] Booting worker with pid: 151552
+[2021-03-22 15:17:10 +0000] [151553] [INFO] Booting worker with pid: 151553
+[2021-03-22 15:17:10 +0000] [151554] [INFO] Booting worker with pid: 151554
+[2021-03-22 15:31:48 +0000] [151542] [INFO] Handling signal: int
+[2021-03-22 15:31:48 +0000] [151548] [INFO] Worker exiting (pid: 151548)
+[2021-03-22 15:31:48 +0000] [151546] [INFO] Worker exiting (pid: 151546)
+[2021-03-22 15:31:48 +0000] [151549] [INFO] Worker exiting (pid: 151549)
+[2021-03-22 15:31:48 +0000] [151550] [INFO] Worker exiting (pid: 151550)
+[2021-03-22 15:31:48 +0000] [151551] [INFO] Worker exiting (pid: 151551)
+[2021-03-22 15:31:48 +0000] [151552] [INFO] Worker exiting (pid: 151552)
+[2021-03-22 15:31:48 +0000] [151553] [INFO] Worker exiting (pid: 151553)
+[2021-03-22 15:31:48 +0000] [151545] [INFO] Worker exiting (pid: 151545)
+[2021-03-22 15:31:48 +0000] [151554] [INFO] Worker exiting (pid: 151554)
+[2021-03-22 15:31:48 +0000] [151547] [INFO] Worker exiting (pid: 151547)
+[2021-03-22 15:31:49 +0000] [151542] [INFO] Shutting down: Master
+[2021-03-22 15:31:50 +0000] [152171] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 15:31:50 +0000] [152171] [INFO] Listening at: http://0.0.0.0:8000 (152171)
+[2021-03-22 15:31:50 +0000] [152171] [INFO] Using worker: sync
+[2021-03-22 15:31:50 +0000] [152174] [INFO] Booting worker with pid: 152174
+[2021-03-22 15:31:51 +0000] [152175] [INFO] Booting worker with pid: 152175
+[2021-03-22 15:31:51 +0000] [152176] [INFO] Booting worker with pid: 152176
+[2021-03-22 15:31:51 +0000] [152177] [INFO] Booting worker with pid: 152177
+[2021-03-22 15:31:51 +0000] [152178] [INFO] Booting worker with pid: 152178
+[2021-03-22 15:31:51 +0000] [152179] [INFO] Booting worker with pid: 152179
+[2021-03-22 15:31:51 +0000] [152180] [INFO] Booting worker with pid: 152180
+[2021-03-22 15:31:51 +0000] [152181] [INFO] Booting worker with pid: 152181
+[2021-03-22 15:31:51 +0000] [152182] [INFO] Booting worker with pid: 152182
+[2021-03-22 15:31:51 +0000] [152183] [INFO] Booting worker with pid: 152183
+[2021-03-22 15:34:45 +0000] [152171] [INFO] Handling signal: int
+[2021-03-22 15:34:45 +0000] [152177] [INFO] Worker exiting (pid: 152177)
+[2021-03-22 15:34:45 +0000] [152178] [INFO] Worker exiting (pid: 152178)
+[2021-03-22 15:34:45 +0000] [152176] [INFO] Worker exiting (pid: 152176)
+[2021-03-22 15:34:45 +0000] [152181] [INFO] Worker exiting (pid: 152181)
+[2021-03-22 15:34:45 +0000] [152175] [INFO] Worker exiting (pid: 152175)
+[2021-03-22 15:34:45 +0000] [152174] [INFO] Worker exiting (pid: 152174)
+[2021-03-22 15:34:45 +0000] [152180] [INFO] Worker exiting (pid: 152180)
+[2021-03-22 15:34:45 +0000] [152179] [INFO] Worker exiting (pid: 152179)
+[2021-03-22 15:34:45 +0000] [152182] [INFO] Worker exiting (pid: 152182)
+[2021-03-22 15:34:45 +0000] [152183] [INFO] Worker exiting (pid: 152183)
+[2021-03-22 15:34:46 +0000] [152171] [INFO] Shutting down: Master
+[2021-03-22 15:35:12 +0000] [152496] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 15:35:12 +0000] [152496] [INFO] Listening at: http://0.0.0.0:8000 (152496)
+[2021-03-22 15:35:12 +0000] [152496] [INFO] Using worker: sync
+[2021-03-22 15:35:12 +0000] [152499] [INFO] Booting worker with pid: 152499
+[2021-03-22 15:35:12 +0000] [152500] [INFO] Booting worker with pid: 152500
+[2021-03-22 15:35:12 +0000] [152501] [INFO] Booting worker with pid: 152501
+[2021-03-22 15:35:12 +0000] [152502] [INFO] Booting worker with pid: 152502
+[2021-03-22 15:35:12 +0000] [152503] [INFO] Booting worker with pid: 152503
+[2021-03-22 15:35:12 +0000] [152504] [INFO] Booting worker with pid: 152504
+[2021-03-22 15:35:12 +0000] [152505] [INFO] Booting worker with pid: 152505
+[2021-03-22 15:35:12 +0000] [152506] [INFO] Booting worker with pid: 152506
+[2021-03-22 15:35:12 +0000] [152507] [INFO] Booting worker with pid: 152507
+[2021-03-22 15:35:12 +0000] [152508] [INFO] Booting worker with pid: 152508
+[2021-03-22 15:41:02,363] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/fa888f77-387e-440c-93fc-00fbb5b6dedd350013296.mp4'
+[2021-03-22 15:53:51 +0000] [152496] [INFO] Handling signal: int
+[2021-03-22 15:53:51 +0000] [152503] [INFO] Worker exiting (pid: 152503)
+[2021-03-22 15:53:51 +0000] [152507] [INFO] Worker exiting (pid: 152507)
+[2021-03-22 15:53:51 +0000] [152501] [INFO] Worker exiting (pid: 152501)
+[2021-03-22 15:53:51 +0000] [152504] [INFO] Worker exiting (pid: 152504)
+[2021-03-22 15:53:51 +0000] [152506] [INFO] Worker exiting (pid: 152506)
+[2021-03-22 15:53:51 +0000] [152508] [INFO] Worker exiting (pid: 152508)
+[2021-03-22 15:53:51 +0000] [152499] [INFO] Worker exiting (pid: 152499)
+[2021-03-22 15:53:51 +0000] [152500] [INFO] Worker exiting (pid: 152500)
+[2021-03-22 15:53:51 +0000] [152505] [INFO] Worker exiting (pid: 152505)
+[2021-03-22 15:53:51 +0000] [152502] [INFO] Worker exiting (pid: 152502)
+[2021-03-22 15:53:51 +0000] [152496] [INFO] Shutting down: Master
+[2021-03-22 15:54:01 +0000] [154207] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 15:54:01 +0000] [154207] [INFO] Listening at: http://0.0.0.0:8000 (154207)
+[2021-03-22 15:54:01 +0000] [154207] [INFO] Using worker: sync
+[2021-03-22 15:54:01 +0000] [154210] [INFO] Booting worker with pid: 154210
+[2021-03-22 15:54:01 +0000] [154211] [INFO] Booting worker with pid: 154211
+[2021-03-22 15:54:01 +0000] [154212] [INFO] Booting worker with pid: 154212
+[2021-03-22 15:54:01 +0000] [154213] [INFO] Booting worker with pid: 154213
+[2021-03-22 15:54:01 +0000] [154214] [INFO] Booting worker with pid: 154214
+[2021-03-22 15:54:01 +0000] [154215] [INFO] Booting worker with pid: 154215
+[2021-03-22 15:54:02 +0000] [154216] [INFO] Booting worker with pid: 154216
+[2021-03-22 15:54:02 +0000] [154217] [INFO] Booting worker with pid: 154217
+[2021-03-22 15:54:02 +0000] [154218] [INFO] Booting worker with pid: 154218
+[2021-03-22 15:54:02 +0000] [154219] [INFO] Booting worker with pid: 154219
+[2021-03-22 16:05:25 +0000] [154207] [INFO] Handling signal: int
+[2021-03-22 16:05:25 +0000] [154210] [INFO] Worker exiting (pid: 154210)
+[2021-03-22 16:05:25 +0000] [154211] [INFO] Worker exiting (pid: 154211)
+[2021-03-22 16:05:25 +0000] [154212] [INFO] Worker exiting (pid: 154212)
+[2021-03-22 16:05:25 +0000] [154214] [INFO] Worker exiting (pid: 154214)
+[2021-03-22 16:05:25 +0000] [154215] [INFO] Worker exiting (pid: 154215)
+[2021-03-22 16:05:25 +0000] [154213] [INFO] Worker exiting (pid: 154213)
+[2021-03-22 16:05:25 +0000] [154216] [INFO] Worker exiting (pid: 154216)
+[2021-03-22 16:05:25 +0000] [154218] [INFO] Worker exiting (pid: 154218)
+[2021-03-22 16:05:25 +0000] [154217] [INFO] Worker exiting (pid: 154217)
+[2021-03-22 16:05:25 +0000] [154219] [INFO] Worker exiting (pid: 154219)
+[2021-03-22 16:05:26 +0000] [154207] [INFO] Shutting down: Master
+[2021-03-22 16:58:25 +0000] [160177] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 16:58:25 +0000] [160177] [INFO] Listening at: http://0.0.0.0:8000 (160177)
+[2021-03-22 16:58:25 +0000] [160177] [INFO] Using worker: sync
+[2021-03-22 16:58:25 +0000] [160181] [INFO] Booting worker with pid: 160181
+[2021-03-22 16:58:25 +0000] [160182] [INFO] Booting worker with pid: 160182
+[2021-03-22 16:58:25 +0000] [160183] [INFO] Booting worker with pid: 160183
+[2021-03-22 16:58:25 +0000] [160184] [INFO] Booting worker with pid: 160184
+[2021-03-22 16:58:25 +0000] [160185] [INFO] Booting worker with pid: 160185
+[2021-03-22 16:58:25 +0000] [160186] [INFO] Booting worker with pid: 160186
+[2021-03-22 16:58:25 +0000] [160187] [INFO] Booting worker with pid: 160187
+[2021-03-22 16:58:25 +0000] [160188] [INFO] Booting worker with pid: 160188
+[2021-03-22 16:58:26 +0000] [160192] [INFO] Booting worker with pid: 160192
+[2021-03-22 16:58:26 +0000] [160193] [INFO] Booting worker with pid: 160193
+[2021-03-22 17:28:23,291] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/image_picker203323497.jpg'
+[2021-03-22 17:30:56 +0000] [160177] [INFO] Handling signal: int
+[2021-03-22 17:30:56 +0000] [160183] [INFO] Worker exiting (pid: 160183)
+[2021-03-22 17:30:56 +0000] [160187] [INFO] Worker exiting (pid: 160187)
+[2021-03-22 17:30:56 +0000] [160184] [INFO] Worker exiting (pid: 160184)
+[2021-03-22 17:30:56 +0000] [160186] [INFO] Worker exiting (pid: 160186)
+[2021-03-22 17:30:56 +0000] [160181] [INFO] Worker exiting (pid: 160181)
+[2021-03-22 17:30:56 +0000] [160188] [INFO] Worker exiting (pid: 160188)
+[2021-03-22 17:30:56 +0000] [160192] [INFO] Worker exiting (pid: 160192)
+[2021-03-22 17:30:56 +0000] [160185] [INFO] Worker exiting (pid: 160185)
+[2021-03-22 17:30:56 +0000] [160193] [INFO] Worker exiting (pid: 160193)
+[2021-03-22 17:30:56 +0000] [160182] [INFO] Worker exiting (pid: 160182)
+[2021-03-22 17:30:57 +0000] [160177] [INFO] Shutting down: Master
+[2021-03-22 17:31:08 +0000] [163122] [INFO] Starting gunicorn 20.0.4
+[2021-03-22 17:31:08 +0000] [163122] [INFO] Listening at: http://0.0.0.0:8000 (163122)
+[2021-03-22 17:31:08 +0000] [163122] [INFO] Using worker: sync
+[2021-03-22 17:31:08 +0000] [163125] [INFO] Booting worker with pid: 163125
+[2021-03-22 17:31:08 +0000] [163126] [INFO] Booting worker with pid: 163126
+[2021-03-22 17:31:08 +0000] [163127] [INFO] Booting worker with pid: 163127
+[2021-03-22 17:31:08 +0000] [163128] [INFO] Booting worker with pid: 163128
+[2021-03-22 17:31:08 +0000] [163129] [INFO] Booting worker with pid: 163129
+[2021-03-22 17:31:08 +0000] [163130] [INFO] Booting worker with pid: 163130
+[2021-03-22 17:31:09 +0000] [163131] [INFO] Booting worker with pid: 163131
+[2021-03-22 17:31:09 +0000] [163132] [INFO] Booting worker with pid: 163132
+[2021-03-22 17:31:09 +0000] [163133] [INFO] Booting worker with pid: 163133
+[2021-03-22 17:31:09 +0000] [163134] [INFO] Booting worker with pid: 163134
+[2021-03-22 17:31:41 +0000] [163122] [INFO] Handling signal: int
+[2021-03-22 17:31:42 +0000] [163128] [INFO] Worker exiting (pid: 163128)
+[2021-03-22 17:31:42 +0000] [163127] [INFO] Worker exiting (pid: 163127)
+[2021-03-22 17:31:42 +0000] [163130] [INFO] Worker exiting (pid: 163130)
+[2021-03-22 17:31:42 +0000] [163125] [INFO] Worker exiting (pid: 163125)
+[2021-03-22 17:31:42 +0000] [163131] [INFO] Worker exiting (pid: 163131)
+[2021-03-22 17:31:42 +0000] [163126] [INFO] Worker exiting (pid: 163126)
+[2021-03-22 17:31:42 +0000] [163132] [INFO] Worker exiting (pid: 163132)
+[2021-03-22 17:31:42 +0000] [163133] [INFO] Worker exiting (pid: 163133)
+[2021-03-22 17:31:42 +0000] [163129] [INFO] Worker exiting (pid: 163129)
+[2021-03-22 17:31:42 +0000] [163134] [INFO] Worker exiting (pid: 163134)
+[2021-03-22 17:31:42 +0000] [163122] [INFO] Shutting down: Master
+[2021-03-23 03:32:38 +0000] [167378] [INFO] Starting gunicorn 20.0.4
+[2021-03-23 03:32:38 +0000] [167378] [INFO] Listening at: http://0.0.0.0:8000 (167378)
+[2021-03-23 03:32:38 +0000] [167378] [INFO] Using worker: sync
+[2021-03-23 03:32:38 +0000] [167382] [INFO] Booting worker with pid: 167382
+[2021-03-23 03:32:38 +0000] [167383] [INFO] Booting worker with pid: 167383
+[2021-03-23 03:32:38 +0000] [167384] [INFO] Booting worker with pid: 167384
+[2021-03-23 03:32:38 +0000] [167385] [INFO] Booting worker with pid: 167385
+[2021-03-23 03:32:39 +0000] [167386] [INFO] Booting worker with pid: 167386
+[2021-03-23 03:32:39 +0000] [167387] [INFO] Booting worker with pid: 167387
+[2021-03-23 03:32:39 +0000] [167388] [INFO] Booting worker with pid: 167388
+[2021-03-23 03:32:39 +0000] [167389] [INFO] Booting worker with pid: 167389
+[2021-03-23 03:32:39 +0000] [167390] [INFO] Booting worker with pid: 167390
+[2021-03-23 03:32:39 +0000] [167391] [INFO] Booting worker with pid: 167391
+[2021-03-23 03:55:49,395] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/trim.52EA186B-92B3-4BCB-ACA4-A02C6A89CEA0.MOV'
+[2021-03-23 04:11:25 +0000] [171113] [INFO] Booting worker with pid: 171113
+[2021-03-23 04:11:25 +0000] [171114] [INFO] Booting worker with pid: 171114
+[2021-03-23 04:11:25 +0000] [171116] [INFO] Booting worker with pid: 171116
+[2021-03-23 04:11:25 +0000] [171119] [INFO] Booting worker with pid: 171119
+[2021-03-23 04:11:26 +0000] [171120] [INFO] Booting worker with pid: 171120
+[2021-03-23 04:11:26 +0000] [171121] [INFO] Booting worker with pid: 171121
+[2021-03-23 04:11:26 +0000] [171122] [INFO] Booting worker with pid: 171122
+[2021-03-23 04:11:26 +0000] [171123] [INFO] Booting worker with pid: 171123
+[2021-03-23 04:11:26 +0000] [171124] [INFO] Booting worker with pid: 171124
+[2021-03-23 04:11:26 +0000] [171125] [INFO] Booting worker with pid: 171125
+[2021-03-23 04:11:26 +0000] [167378] [INFO] Handling signal: hup
+[2021-03-23 04:11:26 +0000] [167378] [INFO] Hang up: Master
+[2021-03-23 04:11:26 +0000] [171126] [INFO] Booting worker with pid: 171126
+[2021-03-23 04:11:26 +0000] [171127] [INFO] Booting worker with pid: 171127
+[2021-03-23 04:11:26 +0000] [171128] [INFO] Booting worker with pid: 171128
+[2021-03-23 04:11:26 +0000] [171129] [INFO] Booting worker with pid: 171129
+[2021-03-23 04:11:26 +0000] [171130] [INFO] Booting worker with pid: 171130
+[2021-03-23 04:11:26 +0000] [171131] [INFO] Booting worker with pid: 171131
+[2021-03-23 04:11:26 +0000] [171132] [INFO] Booting worker with pid: 171132
+[2021-03-23 04:11:26 +0000] [171133] [INFO] Booting worker with pid: 171133
+[2021-03-23 04:11:26 +0000] [171134] [INFO] Booting worker with pid: 171134
+[2021-03-23 04:11:26 +0000] [171135] [INFO] Booting worker with pid: 171135
+[2021-03-23 04:11:26 +0000] [167378] [INFO] Handling signal: hup
+[2021-03-23 04:11:26 +0000] [167378] [INFO] Hang up: Master
+[2021-03-23 04:11:26 +0000] [171136] [INFO] Booting worker with pid: 171136
+[2021-03-23 04:11:26 +0000] [171137] [INFO] Booting worker with pid: 171137
+[2021-03-23 04:11:26 +0000] [171138] [INFO] Booting worker with pid: 171138
+[2021-03-23 04:11:26 +0000] [171139] [INFO] Booting worker with pid: 171139
+[2021-03-23 04:11:26 +0000] [171140] [INFO] Booting worker with pid: 171140
+[2021-03-23 04:11:27 +0000] [171141] [INFO] Booting worker with pid: 171141
+[2021-03-23 04:11:27 +0000] [171142] [INFO] Booting worker with pid: 171142
+[2021-03-23 04:11:27 +0000] [171143] [INFO] Booting worker with pid: 171143
+[2021-03-23 04:11:27 +0000] [171144] [INFO] Booting worker with pid: 171144
+[2021-03-23 04:11:27 +0000] [171145] [INFO] Booting worker with pid: 171145
+[2021-03-23 04:11:29 +0000] [171116] [INFO] Worker exiting (pid: 171116)
+[2021-03-23 04:11:29 +0000] [171113] [INFO] Worker exiting (pid: 171113)
+[2021-03-23 04:11:29 +0000] [171114] [INFO] Worker exiting (pid: 171114)
+[2021-03-23 04:11:29 +0000] [171119] [INFO] Worker exiting (pid: 171119)
+[2021-03-23 04:11:29 +0000] [171120] [INFO] Worker exiting (pid: 171120)
+[2021-03-23 04:11:29 +0000] [171121] [INFO] Worker exiting (pid: 171121)
+[2021-03-23 04:11:29 +0000] [171122] [INFO] Worker exiting (pid: 171122)
+[2021-03-23 04:11:30 +0000] [171123] [INFO] Worker exiting (pid: 171123)
+[2021-03-23 04:11:30 +0000] [171125] [INFO] Worker exiting (pid: 171125)
+[2021-03-23 04:11:30 +0000] [171124] [INFO] Worker exiting (pid: 171124)
+[2021-03-23 04:11:30 +0000] [171127] [INFO] Worker exiting (pid: 171127)
+[2021-03-23 04:11:30 +0000] [171126] [INFO] Worker exiting (pid: 171126)
+[2021-03-23 04:11:30 +0000] [171128] [INFO] Worker exiting (pid: 171128)
+[2021-03-23 04:11:30 +0000] [171130] [INFO] Worker exiting (pid: 171130)
+[2021-03-23 04:11:30 +0000] [171131] [INFO] Worker exiting (pid: 171131)
+[2021-03-23 04:11:30 +0000] [171129] [INFO] Worker exiting (pid: 171129)
+[2021-03-23 04:11:30 +0000] [171133] [INFO] Worker exiting (pid: 171133)
+[2021-03-23 04:11:30 +0000] [171132] [INFO] Worker exiting (pid: 171132)
+[2021-03-23 04:11:30 +0000] [171134] [INFO] Worker exiting (pid: 171134)
+[2021-03-23 04:11:30 +0000] [171135] [INFO] Worker exiting (pid: 171135)
+[2021-03-23 04:12:40,897] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 26, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 63, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-23 04:12:59,897] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 26, in upload_file
+    seperate_frame()
+  File "/root/senior-project/app/routes.py", line 63, in seperate_frame
+    print("Seperate frame from Video")
+OSError: [Errno 5] Input/output error
+[2021-03-23 04:13:37 +0000] [167378] [INFO] Handling signal: term
+[2021-03-23 04:13:37 +0000] [171136] [INFO] Worker exiting (pid: 171136)
+[2021-03-23 04:13:37 +0000] [171137] [INFO] Worker exiting (pid: 171137)
+[2021-03-23 04:13:37 +0000] [171138] [INFO] Worker exiting (pid: 171138)
+[2021-03-23 04:13:37 +0000] [171139] [INFO] Worker exiting (pid: 171139)
+[2021-03-23 04:13:37 +0000] [171140] [INFO] Worker exiting (pid: 171140)
+[2021-03-23 04:13:37 +0000] [171141] [INFO] Worker exiting (pid: 171141)
+[2021-03-23 04:13:37 +0000] [171142] [INFO] Worker exiting (pid: 171142)
+[2021-03-23 04:13:37 +0000] [171143] [INFO] Worker exiting (pid: 171143)
+[2021-03-23 04:13:37 +0000] [171144] [INFO] Worker exiting (pid: 171144)
+[2021-03-23 04:13:37 +0000] [171145] [INFO] Worker exiting (pid: 171145)
+[2021-03-23 04:13:37 +0000] [167378] [INFO] Shutting down: Master
+[2021-03-23 04:13:50 +0000] [171491] [INFO] Starting gunicorn 20.0.4
+[2021-03-23 04:13:50 +0000] [171491] [INFO] Listening at: http://0.0.0.0:8000 (171491)
+[2021-03-23 04:13:50 +0000] [171491] [INFO] Using worker: sync
+[2021-03-23 04:13:50 +0000] [171498] [INFO] Booting worker with pid: 171498
+[2021-03-23 04:13:50 +0000] [171499] [INFO] Booting worker with pid: 171499
+[2021-03-23 04:13:50 +0000] [171500] [INFO] Booting worker with pid: 171500
+[2021-03-23 04:13:50 +0000] [171501] [INFO] Booting worker with pid: 171501
+[2021-03-23 04:13:50 +0000] [171502] [INFO] Booting worker with pid: 171502
+[2021-03-23 04:13:50 +0000] [171503] [INFO] Booting worker with pid: 171503
+[2021-03-23 04:13:50 +0000] [171504] [INFO] Booting worker with pid: 171504
+[2021-03-23 04:13:50 +0000] [171505] [INFO] Booting worker with pid: 171505
+[2021-03-23 04:13:50 +0000] [171506] [INFO] Booting worker with pid: 171506
+[2021-03-23 04:13:50 +0000] [171507] [INFO] Booting worker with pid: 171507
+[2021-03-23 04:14:59,744] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/senior-project/app/routes.py", line 25, in upload_file
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+  File "/root/anaconda3/envs/project/lib/python3.6/site-packages/werkzeug/datastructures.py", line 3066, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app/upload_video/eea6bfd9-97c2-432d-8df1-6a1b67498d111637621390.mp4'
+[2021-03-23 04:15:07 +0000] [171491] [INFO] Handling signal: int
+[2021-03-23 04:15:07 +0000] [171503] [INFO] Worker exiting (pid: 171503)
+[2021-03-23 04:15:07 +0000] [171498] [INFO] Worker exiting (pid: 171498)
+[2021-03-23 04:15:07 +0000] [171504] [INFO] Worker exiting (pid: 171504)
+[2021-03-23 04:15:07 +0000] [171505] [INFO] Worker exiting (pid: 171505)
+[2021-03-23 04:15:07 +0000] [171501] [INFO] Worker exiting (pid: 171501)
+[2021-03-23 04:15:07 +0000] [171506] [INFO] Worker exiting (pid: 171506)
+[2021-03-23 04:15:07 +0000] [171502] [INFO] Worker exiting (pid: 171502)
+[2021-03-23 04:15:07 +0000] [171507] [INFO] Worker exiting (pid: 171507)
+[2021-03-23 04:15:07 +0000] [171499] [INFO] Worker exiting (pid: 171499)
+[2021-03-23 04:15:07 +0000] [171500] [INFO] Worker exiting (pid: 171500)
+[2021-03-23 04:15:07 +0000] [171491] [INFO] Shutting down: Master
+[2021-03-23 04:15:09 +0000] [171629] [INFO] Starting gunicorn 20.0.4
+[2021-03-23 04:15:09 +0000] [171629] [INFO] Listening at: http://0.0.0.0:8000 (171629)
+[2021-03-23 04:15:09 +0000] [171629] [INFO] Using worker: sync
+[2021-03-23 04:15:09 +0000] [171632] [INFO] Booting worker with pid: 171632
+[2021-03-23 04:15:09 +0000] [171633] [INFO] Booting worker with pid: 171633
+[2021-03-23 04:15:09 +0000] [171634] [INFO] Booting worker with pid: 171634
+[2021-03-23 04:15:09 +0000] [171635] [INFO] Booting worker with pid: 171635
+[2021-03-23 04:15:09 +0000] [171636] [INFO] Booting worker with pid: 171636
+[2021-03-23 04:15:09 +0000] [171637] [INFO] Booting worker with pid: 171637
+[2021-03-23 04:15:09 +0000] [171638] [INFO] Booting worker with pid: 171638
+[2021-03-23 04:15:09 +0000] [171639] [INFO] Booting worker with pid: 171639
+[2021-03-23 04:15:09 +0000] [171640] [INFO] Booting worker with pid: 171640
+[2021-03-23 04:15:09 +0000] [171641] [INFO] Booting worker with pid: 171641
+[2021-03-23 04:56:41 +0000] [171629] [INFO] Handling signal: term
+[2021-03-23 04:56:41 +0000] [171632] [INFO] Worker exiting (pid: 171632)
+[2021-03-23 04:56:41 +0000] [171633] [INFO] Worker exiting (pid: 171633)
+[2021-03-23 04:56:41 +0000] [171634] [INFO] Worker exiting (pid: 171634)
+[2021-03-23 04:56:41 +0000] [171635] [INFO] Worker exiting (pid: 171635)
+[2021-03-23 04:56:41 +0000] [171636] [INFO] Worker exiting (pid: 171636)
+[2021-03-23 04:56:41 +0000] [171637] [INFO] Worker exiting (pid: 171637)
+[2021-03-23 04:56:41 +0000] [171638] [INFO] Worker exiting (pid: 171638)
+[2021-03-23 04:56:41 +0000] [171639] [INFO] Worker exiting (pid: 171639)
+[2021-03-23 04:56:41 +0000] [171640] [INFO] Worker exiting (pid: 171640)
+[2021-03-23 04:56:41 +0000] [171641] [INFO] Worker exiting (pid: 171641)
+[2021-03-23 04:56:41 +0000] [171629] [INFO] Shutting down: Master
