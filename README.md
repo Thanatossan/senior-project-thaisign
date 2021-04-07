@@ -23,8 +23,6 @@
    ```sh
    conda install -c anaconda gunicorn
    ```
-4. Enter your API in `config.js`
-   
   
 ### Run
 ```JS
