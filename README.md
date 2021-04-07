@@ -15,7 +15,7 @@
    ```
 2. Install conda packages
    ```sh
-   conda install conda install -c menpo opencv 
+   conda install -c menpo opencv 
    ```
    ```sh
    conda install -c anaconda flask
